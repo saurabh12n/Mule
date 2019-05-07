@@ -35,8 +35,8 @@
   <configuration>
           <deploymentType>cloudhub</deploymentType>
           <muleVersion>3.9.0</muleVersion> 
-          <username>${anypoint.username}</username> 
-          <password>${anypoint.password}</password> 
+          <username>saurabh12n6</username> 
+          <password>Ekaagra5678@</password> 
           <applicationName>${project.artifactId}</applicationName>
           <environment>${cloundhub.env}</environment> 
           <businessGroup>${anypoint.businessGroup}</businessGroup>
