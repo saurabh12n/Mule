@@ -44,6 +44,7 @@
           <uri>${anypoint.uri}</uri> 
           <workerType>${cloudhub.workerType}</workerType>
           <workers>${cloudhub.workers}</workers>
+          <region>${region}</region>
         </configuration>
                 <executions>
           <execution>
