@@ -31,7 +31,7 @@
 			<plugin>
   <groupId>org.mule.tools.maven</groupId>
   <artifactId>mule-maven-plugin</artifactId>
-  <version>2.0</version>
+  <version>2.2.1</version>
   <configuration>
           <deploymentType>cloudhub</deploymentType>
           <muleVersion>3.9.0</muleVersion> 
@@ -187,15 +187,10 @@
         </repository>
     </repositories>
     <pluginRepositories>
-        <pluginRepository>
-            <id>mulesoft-release</id>
-            <name>mulesoft release repository</name>
-            <layout>default</layout>
-            <url>http://repository.mulesoft.org/releases/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
+    <pluginRepository>
+        <id>mule-public</id>
+        <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+    </pluginRepository>
     </pluginRepositories>
 
 </project>
