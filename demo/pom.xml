@@ -98,6 +98,7 @@
 			          <workerType>${cloudhub.workerType}</workerType>
 			          <workers>${cloudhub.workers}</workers>
 			          <region>${region}</region>
+			          <applicationName>demo-${cloudHubAppSuffix}</applicationName>
         		</configuration>
                 <executions>
 		          <execution>
