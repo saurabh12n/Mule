@@ -100,7 +100,7 @@
 		            <id>deploy</id>
 		            <phase>deploy</phase>
 		            <goals>
-		              <goal>deploy</goal>
+		              <goal>jar</goal>
 		            </goals>
 		          </execution>
 		        </executions>
