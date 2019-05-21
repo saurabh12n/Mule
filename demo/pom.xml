@@ -92,7 +92,6 @@
 			          <username>saurabh12n6</username> 
 			          <password>Ekaagra5678@</password> 
 			          <environment>Sandbox</environment> 
-			          <redeploy>true</redeploy>
 			          <businessGroup>${anypoint.businessGroup}</businessGroup>
 			          <region>${cloudhub.region}</region>
 			          <uri>${anypoint.uri}</uri> 
