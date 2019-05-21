@@ -14,7 +14,7 @@
 
     	<jdk.version>1.8.0_201</jdk.version>
 		<mule.version>3.9.0</mule.version>
-    	<mule.tools.version>1.7</mule.tools.version>
+    	<mule.tools.version>1.2</mule.tools.version>
 	</properties>
 
 	<build>
@@ -29,16 +29,65 @@
 				</configuration>
 			</plugin>
 			<plugin>
+
+<groupId>org.codehaus.mojo</groupId>
+
+<artifactId>build-helper-maven-plugin</artifactId>
+
+<version>1.7</version>
+
+<executions>
+
+<execution>
+
+<id>add-resource</id>
+
+<phase>generate-resources</phase>
+
+<goals>
+
+<goal>add-resource</goal>
+
+</goals>
+
+<configuration>
+
+<resources>
+
+<resource>
+
+<directory>src/main/app/</directory>
+
+</resource>
+
+<resource>
+
+<directory>mappings/</directory>
+
+</resource>
+
+</resources>
+
+</configuration>
+
+</execution>
+
+</executions>
+
+</plugin>
+
+
+			<plugin>
   				<groupId>org.mule.tools.maven</groupId>
   				<artifactId>mule-maven-plugin</artifactId>
-  				<version>2.2.1</version>
+  				<version>2.0</version>
   				<configuration>
 			          <deploymentType>cloudhub</deploymentType>
 			          <muleVersion>3.9.0</muleVersion> 
 			          <username>saurabh12n6</username> 
 			          <password>Ekaagra5678@</password> 
-			          <applicationName>${project.artifactId}</applicationName>
-			          <environment>${cloundhub.env}</environment> 
+			          <environment>Sandbox</environment> 
+			          <redeploy>true</redeploy>
 			          <businessGroup>${anypoint.businessGroup}</businessGroup>
 			          <region>${cloudhub.region}</region>
 			          <uri>${anypoint.uri}</uri> 
@@ -57,32 +106,19 @@
 		        </executions>
 			</plugin>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.7</version>
-				<executions>
-					<execution>
-						<id>add-resource</id>
-						<phase>generate-resources</phase>
-						<goals>
-							<goal>add-resource</goal>
-						</goals>
-						<configuration>
-							<resources>
-								<resource>
-									<directory>src/main/app/</directory>
-								</resource>
-								<resource>
-									<directory>src/main/api/</directory>
-								</resource>
-								<resource>
-									<directory>mappings/</directory>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+
+<groupId>org.apache.maven.plugins</groupId>
+
+<artifactId>maven-deploy-plugin</artifactId>
+
+<configuration>
+
+<skip>true</skip>
+
+</configuration>
+
+</plugin>
+	
 		</plugins>
 	</build>
 
@@ -174,24 +210,62 @@
     </dependencies>
 
 	<repositories>
-	     <repository>
-            <id>Central</id>
-            <name>Central</name>
-            <url>http://repo1.maven.org/maven2/</url>
-            <layout>default</layout>
-        </repository>
-        <repository>
-            <id>mulesoft-releases</id>
-            <name>MuleSoft Releases Repository</name>
-            <url>http://repository.mulesoft.org/releases/</url>
-            <layout>default</layout>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-	    <pluginRepository>
-	        <id>mule-public</id>
-	        <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
-	    </pluginRepository>
-    </pluginRepositories>
+
+<repository>
+
+<id>Central</id>
+
+<name>Central</name>
+
+<url>http://repo1.maven.org/maven2/</url>
+
+<layout>default</layout>
+
+</repository>
+
+<repository>
+
+<id>mulesoft-releases</id>
+
+<name>MuleSoft Releases Repository</name>
+
+<url>http://repository.mulesoft.org/releases/</url>
+
+<layout>default</layout>
+
+</repository>
+
+</repositories>
+
+<pluginRepositories>
+
+<pluginRepository>
+
+<id>mulesoft-release</id>
+
+<name>mulesoft release repository</name>
+
+<layout>default</layout>
+
+<url>http://repository.mulesoft.org/releases/</url>
+
+<snapshots>
+
+<enabled>false</enabled>
+
+</snapshots>
+
+</pluginRepository>
+
+<pluginRepository>
+
+<id>mule-public</id>
+
+<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+
+</pluginRepository>
+
+</pluginRepositories>
+
 
 </project>
