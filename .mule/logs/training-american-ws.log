@@ -1,0 +1,104 @@
+2019-04-25 12:04:12,092 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'training-american-ws-v2'               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-04-25 12:04:12,552 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-04-25 12:04:12,792 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-04-25 12:04:13,063 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-04-25 12:04:13,063 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-04-25 12:04:13,472 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5ae81e1: startup date [Thu Apr 25 12:04:13 IST 2019]; root of context hierarchy
+2019-04-25 12:04:16,292 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-25 12:04:16,932 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2019-04-25 12:04:16,932 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2019-04-25 12:04:16,932 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2019-04-25 12:04:16,932 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2019-04-25 12:04:18,652 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-04-25 12:04:19,312 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Mulesoft\workspace\.mule\.\.mule\training-american-ws-v2\queue-tx-log\tx1.log and C:\Mulesoft\workspace\.mule\.\.mule\training-american-ws-v2\queue-tx-log\tx2.log
+2019-04-25 12:04:19,342 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Mulesoft\workspace\.mule\.\.mule\training-american-ws-v2\queue-xa-tx-log\tx1.log and C:\Mulesoft\workspace\.mule\.\.mule\training-american-ws-v2\queue-xa-tx-log\tx2.log
+2019-04-25 12:04:19,646 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-04-25 12:04:19,652 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getFlightsFlow
+2019-04-25 12:04:19,652 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@60cb1ed6
+2019-04-25 12:04:19,682 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getFlightsFlow.stage1
+2019-04-25 12:04:19,703 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getFlightsByIDFlow
+2019-04-25 12:04:19,703 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@588545ac
+2019-04-25 12:04:19,712 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getFlightsByIDFlow.stage1
+2019-04-25 12:04:19,712 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: postFlightFlow
+2019-04-25 12:04:19,712 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@45e617c4
+2019-04-25 12:04:19,722 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: postFlightFlow.stage1
+2019-04-25 12:04:19,722 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: american-flights-api-main
+2019-04-25 12:04:19,722 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2019-04-25 12:04:19,732 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2019-04-25 12:04:19,732 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2019-04-25 12:04:19,732 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2019-04-25 12:04:19,732 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2019-04-25 12:04:19,783 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: american-flights-api-main.stage1
+2019-04-25 12:04:19,785 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: american-flights-api-console
+2019-04-25 12:04:19,785 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@64b018f3
+2019-04-25 12:04:19,797 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: american-flights-api-console.stage1
+2019-04-25 12:04:19,803 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: put:/flights/{ID}:application/json:american-flights-api-config
+2019-04-25 12:04:19,803 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@131a7516
+2019-04-25 12:04:19,822 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: put:/flights/{ID}:application/json:american-flights-api-config.stage1
+2019-04-25 12:04:19,822 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: delete:/flights/{ID}:american-flights-api-config
+2019-04-25 12:04:19,822 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3e046e39
+2019-04-25 12:04:19,832 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: delete:/flights/{ID}:american-flights-api-config.stage1
+2019-04-25 12:04:19,832 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights:american-flights-api-config
+2019-04-25 12:04:19,832 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2c719bd4
+2019-04-25 12:04:19,842 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights:american-flights-api-config.stage1
+2019-04-25 12:04:19,842 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights/{ID}:american-flights-api-config
+2019-04-25 12:04:19,842 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5232e3f1
+2019-04-25 12:04:19,852 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights/{ID}:american-flights-api-config.stage1
+2019-04-25 12:04:19,852 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/flights:application/json:american-flights-api-config
+2019-04-25 12:04:19,852 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@552cede7
+2019-04-25 12:04:19,862 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/flights:application/json:american-flights-api-config.stage1
+2019-04-25 12:04:20,713 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2019-04-25 12:04:21,102 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Mulesoft\workspace\.mule\apps\training-american-ws-v2\implementation.xml'}, ConfigResource{resourceName='C:\Mulesoft\workspace\.mule\apps\training-american-ws-v2\interface.xml'}]"
+2019-04-25 12:04:21,102 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Mulesoft\workspace\.mule\apps\training-american-ws-v2\implementation.xml'}, ConfigResource{resourceName='C:\Mulesoft\workspace\.mule\apps\training-american-ws-v2\interface.xml'}]"
+2019-04-25 12:04:21,112 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'training-american-ws-v2'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-04-25 12:04:21,122 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-04-25 12:04:21,122 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-04-25 12:04:21,202 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2019-04-25 12:04:21,202 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-04-25 12:04:21,212 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-04-25 12:04:21,212 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getFlightsFlow
+2019-04-25 12:04:21,212 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getFlightsFlow.stage1
+2019-04-25 12:04:21,227 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getFlightsByIDFlow
+2019-04-25 12:04:21,227 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getFlightsByIDFlow.stage1
+2019-04-25 12:04:21,237 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: postFlightFlow
+2019-04-25 12:04:21,238 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: postFlightFlow.stage1
+2019-04-25 12:04:21,245 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: american-flights-api-main
+2019-04-25 12:04:21,245 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: american-flights-api-main.stage1
+2019-04-25 12:04:21,279 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:8081/console                            *
+********************************************************************************
+2019-04-25 12:04:21,279 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: american-flights-api-console
+2019-04-25 12:04:21,279 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: american-flights-api-console.stage1
+2019-04-25 12:04:21,289 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: put:/flights/{ID}:application/json:american-flights-api-config
+2019-04-25 12:04:21,289 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: put:/flights/{ID}:application/json:american-flights-api-config.stage1
+2019-04-25 12:04:21,292 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: delete:/flights/{ID}:american-flights-api-config
+2019-04-25 12:04:21,292 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: delete:/flights/{ID}:american-flights-api-config.stage1
+2019-04-25 12:04:21,292 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights:american-flights-api-config
+2019-04-25 12:04:21,297 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights:american-flights-api-config.stage1
+2019-04-25 12:04:21,302 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights/{ID}:american-flights-api-config
+2019-04-25 12:04:21,302 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights/{ID}:american-flights-api-config.stage1
+2019-04-25 12:04:21,307 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/flights:application/json:american-flights-api-config
+2019-04-25 12:04:21,307 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/flights:application/json:american-flights-api-config.stage1
+2019-04-25 12:04:21,422 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-04-25 12:04:21,542 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: training-american-ws-v2                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************

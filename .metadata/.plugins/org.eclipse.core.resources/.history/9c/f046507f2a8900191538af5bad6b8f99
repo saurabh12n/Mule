@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://www.example.com/xsd/books"
+	 targetNamespace="http://www.example.com/xsd/books"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="BookStore">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Book" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Book">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Title"/>
+				<xs:element ref="Author"/>
+				<xs:element ref="Date"/>
+				<xs:element ref="ISBN"/>
+				<xs:element ref="Publisher"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Title" type="xs:string"/>
+	<xs:element name="Author" type="xs:string"/>
+	<xs:element name="Date" type="xs:string"/>
+	<xs:element name="ISBN" type="xs:string"/>
+	<xs:element name="Publisher" type="xs:string"/>
+</xs:schema>

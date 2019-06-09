@@ -1,0 +1,11 @@
+package myapp.webservice;
+
+public class HW implements IHW {
+
+	@Override
+	public String helloWorldFunc(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

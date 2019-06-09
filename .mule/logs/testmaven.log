@@ -1,0 +1,84 @@
+2019-06-09 15:51:13,563 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'testmaven'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-06-09 15:51:13,864 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-06-09 15:51:14,027 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-06-09 15:51:14,339 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-06-09 15:51:14,339 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-06-09 15:51:14,460 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1950e8a6: startup date [Sun Jun 09 15:51:14 IST 2019]; root of context hierarchy
+2019-06-09 15:51:17,715 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-06-09 15:51:19,215 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-06-09 15:51:19,685 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Mulesoft\workspace\.mule\.\.mule\testmaven\queue-tx-log\tx1.log and C:\Mulesoft\workspace\.mule\.\.mule\testmaven\queue-tx-log\tx2.log
+2019-06-09 15:51:19,700 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Mulesoft\workspace\.mule\.\.mule\testmaven\queue-xa-tx-log\tx1.log and C:\Mulesoft\workspace\.mule\.\.mule\testmaven\queue-xa-tx-log\tx2.log
+2019-06-09 15:51:19,901 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-06-09 15:51:19,901 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testmavenFlow
+2019-06-09 15:51:19,901 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@9efcd90
+2019-06-09 15:51:19,964 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testmavenFlow.stage1
+2019-06-09 15:51:20,465 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Mulesoft\workspace\.mule\apps\testmaven\testmaven.xml'}]"
+2019-06-09 15:51:20,465 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Mulesoft\workspace\.mule\apps\testmaven\testmaven.xml'}]"
+2019-06-09 15:51:20,477 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'testmaven'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-06-09 15:51:20,477 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-06-09 15:51:20,477 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-06-09 15:51:20,518 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2019-06-09 15:51:20,534 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-06-09 15:51:20,534 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-06-09 15:51:20,534 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testmavenFlow
+2019-06-09 15:51:20,534 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testmavenFlow.stage1
+2019-06-09 15:51:20,581 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-06-09 15:51:20,603 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: testmaven                                             *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-06-09 15:52:39,681 [[testmaven].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=8241edb0-8aa0-11e9-b632-48a47208b7a3
+  payload=org.mule.transport.NullPayload
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    accept-encoding=gzip, deflate
+    accept-language=en-US,en;q=0.5
+    connection=keep-alive
+    cookie=jenkins-timestamper-offset=-19800000
+    host=localhost:8081
+    http.listener.path=/test
+    http.method=GET
+    http.query.params=ParameterMap{[]}
+    http.query.string=
+    http.relative.path=/test
+    http.remote.address=/127.0.0.1:64610
+    http.request.path=/test
+    http.request.uri=/test
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    upgrade-insecure-requests=1
+    user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2019-06-09 15:52:39,734 [[testmaven].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/favicon.ico
+2019-06-09 15:52:39,734 [[testmaven].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/test/]

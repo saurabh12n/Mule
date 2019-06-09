@@ -1,0 +1,452 @@
+<!--
+ Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.6b21  svn-revision#12959. 
+-->
+<xs:schema xmlns:tns="http://ruleengine.vodafone.eteration.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ruleengine.vodafone.eteration.com/">
+<xs:element name="getAvailableProducts" type="tns:getAvailableProducts"/>
+<xs:element name="getAvailableProductsResponse" type="tns:getAvailableProductsResponse"/>
+<xs:element name="getAvailableTariffs" type="tns:getAvailableTariffs"/>
+<xs:element name="getAvailableTariffsResponse" type="tns:getAvailableTariffsResponse"/>
+<xs:element name="getDefaultProfWithoutFlag" type="tns:getDefaultProfWithoutFlag"/>
+<xs:element name="getDefaultProfWithoutFlagResponse" type="tns:getDefaultProfWithoutFlagResponse"/>
+<xs:element name="getGroupProducts" type="tns:getGroupProducts"/>
+<xs:element name="getGroupProductsInfo" type="tns:getGroupProductsInfo"/>
+<xs:element name="getGroupProductsInfoResponse" type="tns:getGroupProductsInfoResponse"/>
+<xs:element name="getGroupProductsResponse" type="tns:getGroupProductsResponse"/>
+<xs:element name="getProductInfo" type="tns:getProductInfo"/>
+<xs:element name="getProductInfoResponse" type="tns:getProductInfoResponse"/>
+<xs:element name="hasFakeTariff" type="tns:hasFakeTariff"/>
+<xs:element name="hasFakeTariffResponse" type="tns:hasFakeTariffResponse"/>
+<xs:element name="validateAndConfigureAssets" type="tns:validateAndConfigureAssets"/>
+<xs:element name="validateAndConfigureAssetsResponse" type="tns:validateAndConfigureAssetsResponse"/>
+<xs:element name="validateAssets" type="tns:validateAssets"/>
+<xs:element name="validateAssetsResponse" type="tns:validateAssetsResponse"/>
+<xs:complexType name="validateAndConfigureAssets">
+<xs:sequence>
+<xs:element name="validateRequest" type="tns:validateRequest" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="validateRequest">
+<xs:sequence>
+<xs:element name="billingAccountData" type="tns:billingAccount" minOccurs="0"/>
+<xs:element name="catalogId" type="xs:string" minOccurs="0"/>
+<xs:element name="channel" type="xs:string" minOccurs="0"/>
+<xs:element name="dueDate" type="xs:string" minOccurs="0"/>
+<xs:element name="role" type="xs:string" minOccurs="0"/>
+<xs:element name="currentAssets" type="tns:asset" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="customerData" type="tns:customer" minOccurs="0"/>
+<xs:element name="mainIntegrationId" type="xs:string" minOccurs="0"/>
+<xs:element name="msisdn" type="xs:string" minOccurs="0"/>
+<xs:element name="targetProducts" type="tns:targetProduct" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="transactionType" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="billingAccount">
+<xs:sequence>
+<xs:element name="accountType" type="xs:string" minOccurs="0"/>
+<xs:element name="addresses" type="tns:address" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="billStartDate" type="xs:string" minOccurs="0"/>
+<xs:element name="billStatusCode" type="xs:string" minOccurs="0"/>
+<xs:element name="billingAccountCode" type="xs:string" minOccurs="0"/>
+<xs:element name="billingAccountName" type="xs:string" minOccurs="0"/>
+<xs:element name="billingProfile" type="tns:billingProfile" minOccurs="0"/>
+<xs:element name="companyName" type="xs:string" minOccurs="0"/>
+<xs:element name="contacts" type="tns:contact" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="currencyCode" type="xs:string" minOccurs="0"/>
+<xs:element name="language" type="xs:string" minOccurs="0"/>
+<xs:element name="taxType" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="address">
+<xs:sequence>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+<xs:element name="addressId" type="xs:string" minOccurs="0"/>
+<xs:element name="addressNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="apartmentBuildingNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="city" type="xs:string" minOccurs="0"/>
+<xs:element name="country" type="xs:string" minOccurs="0"/>
+<xs:element name="districtTown" type="xs:string" minOccurs="0"/>
+<xs:element name="neighborhoodVillage" type="xs:string" minOccurs="0"/>
+<xs:element name="sitePlaza" type="xs:string" minOccurs="0"/>
+<xs:element name="state" type="xs:string" minOccurs="0"/>
+<xs:element name="streetType" type="xs:string" minOccurs="0"/>
+<xs:element name="zip" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="billingProfile">
+<xs:sequence>
+<xs:element name="billCycle" type="xs:string" minOccurs="0"/>
+<xs:element name="billFrequency" type="xs:string" minOccurs="0"/>
+<xs:element name="billToPersonEmail" type="xs:string" minOccurs="0"/>
+<xs:element name="billToPersonId" type="xs:string" minOccurs="0"/>
+<xs:element name="detailType" type="xs:string" minOccurs="0"/>
+<xs:element name="mediaType" type="xs:string" minOccurs="0"/>
+<xs:element name="notificationMsisdn" type="xs:string" minOccurs="0"/>
+<xs:element name="paymentMethod" type="xs:string" minOccurs="0"/>
+<xs:element name="paymentTerm" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="contact">
+<xs:sequence>
+<xs:element name="birthdate" type="xs:string" minOccurs="0"/>
+<xs:element name="contactId" type="xs:string" minOccurs="0"/>
+<xs:element name="contactType" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="firstName" type="xs:string" minOccurs="0"/>
+<xs:element name="lastName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="asset">
+<xs:sequence>
+<xs:element name="assetId" type="xs:string" minOccurs="0"/>
+<xs:element name="attributes" type="tns:attribute" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="dueDate" type="xs:string" minOccurs="0"/>
+<xs:element name="endDate" type="xs:string" minOccurs="0"/>
+<xs:element name="group" type="xs:string" minOccurs="0"/>
+<xs:element name="integrationId" type="xs:string" minOccurs="0"/>
+<xs:element name="lineNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="modifyDate" type="xs:string" minOccurs="0"/>
+<xs:element name="orderChannel" type="xs:string" minOccurs="0"/>
+<xs:element name="organizationCode" type="xs:string" minOccurs="0"/>
+<xs:element name="parentAssetId" type="xs:string" minOccurs="0"/>
+<xs:element name="priceListId" type="xs:string" minOccurs="0"/>
+<xs:element name="productCatalogId" type="xs:string" minOccurs="0"/>
+<xs:element name="productName" type="xs:string" minOccurs="0"/>
+<xs:element name="promotionPartNum" type="xs:string" minOccurs="0"/>
+<xs:element name="rootAssetId" type="xs:string" minOccurs="0"/>
+<xs:element name="serviceId" type="xs:string" minOccurs="0"/>
+<xs:element name="serviceType" type="xs:string" minOccurs="0"/>
+<xs:element name="startDate" type="xs:string" minOccurs="0"/>
+<xs:element name="statusCode" type="xs:string" minOccurs="0"/>
+<xs:element name="subType" type="xs:string" minOccurs="0"/>
+<xs:element name="technicalName" type="xs:string" minOccurs="0"/>
+<xs:element name="type" type="xs:string" minOccurs="0"/>
+<xs:element name="agreementId" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="attribute">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="offvalue" type="xs:string" minOccurs="0"/>
+<xs:element name="parentId" type="xs:string" minOccurs="0"/>
+<xs:element name="vdesc" type="xs:string" minOccurs="0"/>
+<xs:element name="value" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="customer">
+<xs:sequence>
+<xs:element name="acquisitionDate" type="xs:string" minOccurs="0"/>
+<xs:element name="addresses" type="tns:address" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="birthdate" type="xs:string" minOccurs="0"/>
+<xs:element name="citizenship" type="xs:string" minOccurs="0"/>
+<xs:element name="customerCode" type="xs:string" minOccurs="0"/>
+<xs:element name="customerType" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="faxNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="firstName" type="xs:string" minOccurs="0"/>
+<xs:element name="firstSubscriptionDate" type="xs:string" minOccurs="0"/>
+<xs:element name="language" type="xs:string" minOccurs="0"/>
+<xs:element name="lastUpdateDate" type="xs:string" minOccurs="0"/>
+<xs:element name="mnpDate" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="newAcquisitionDate" type="xs:string" minOccurs="0"/>
+<xs:element name="organizations" type="tns:organization" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="parentCustomerCode" type="xs:string" minOccurs="0"/>
+<xs:element name="personalId" type="xs:string" minOccurs="0"/>
+<xs:element name="phoneNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="phyFlag" type="xs:string" minOccurs="0"/>
+<xs:element name="preToPostDate" type="xs:string" minOccurs="0"/>
+<xs:element name="rooatTransactionId" type="xs:string" minOccurs="0"/>
+<xs:element name="rootCustomerCode" type="xs:string" minOccurs="0"/>
+<xs:element name="sequenceNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="statusCode" type="xs:string" minOccurs="0"/>
+<xs:element name="statusDescription" type="xs:string" minOccurs="0"/>
+<xs:element name="subclass" type="xs:string" minOccurs="0"/>
+<xs:element name="subscriptionDate" type="xs:string" minOccurs="0"/>
+<xs:element name="taxId" type="xs:string" minOccurs="0"/>
+<xs:element name="taxOffice" type="xs:string" minOccurs="0"/>
+<xs:element name="userBirthDate" type="xs:string" minOccurs="0"/>
+<xs:element name="mSegment" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="organization">
+<xs:sequence>
+<xs:element name="addressId" type="xs:string" minOccurs="0"/>
+<xs:element name="city" type="xs:string" minOccurs="0"/>
+<xs:element name="country" type="xs:string" minOccurs="0"/>
+<xs:element name="faxNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="organizationCode" type="xs:string" minOccurs="0"/>
+<xs:element name="organizationId" type="xs:string" minOccurs="0"/>
+<xs:element name="phoneNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="postalCode" type="xs:string" minOccurs="0"/>
+<xs:element name="primary" type="xs:string" minOccurs="0"/>
+<xs:element name="state" type="xs:string" minOccurs="0"/>
+<xs:element name="streetAddress" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="targetProduct">
+<xs:sequence>
+<xs:element name="action" type="xs:string" minOccurs="0"/>
+<xs:element name="attributes" type="tns:attribute" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="productCatalogId" type="xs:string" minOccurs="0"/>
+<xs:element name="technicalName" type="xs:string" minOccurs="0"/>
+<xs:element name="type" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="validateAndConfigureAssetsResponse">
+<xs:sequence>
+<xs:element name="validateAndConfigureResponse" type="tns:validateAndConfigureResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="validateAndConfigureResponse">
+<xs:sequence>
+<xs:element name="mainIntegrationID" type="xs:string" minOccurs="0"/>
+<xs:element name="msisdn" type="xs:string" minOccurs="0"/>
+<xs:element name="orderConfiguration" type="tns:orderConfiguration" minOccurs="0"/>
+<xs:element name="rules" type="tns:rule" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="status" type="tns:status" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="orderConfiguration">
+<xs:sequence>
+<xs:element name="order" type="tns:orderData" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="orderData">
+<xs:sequence>
+<xs:element name="action" type="xs:string" minOccurs="0"/>
+<xs:element name="approvalContextOverride" type="xs:string" minOccurs="0"/>
+<xs:element name="attribute" type="tns:attribute" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="catalogType" type="xs:string" minOccurs="0"/>
+<xs:element name="childIntegrationId" type="xs:string" minOccurs="0"/>
+<xs:element name="desc" type="xs:string" minOccurs="0"/>
+<xs:element name="parentId" type="xs:string" minOccurs="0"/>
+<xs:element name="productCatalogId" type="xs:string" minOccurs="0"/>
+<xs:element name="productType" type="xs:string" minOccurs="0"/>
+<xs:element name="reasonCode" type="xs:string" minOccurs="0"/>
+<xs:element name="technicalName" type="xs:string" minOccurs="0"/>
+<xs:element name="type" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="rule">
+<xs:sequence>
+<xs:element name="action" type="xs:string" minOccurs="0"/>
+<xs:element name="description" type="tns:multiLangString" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="type" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="multiLangString">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="values" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="status">
+<xs:sequence>
+<xs:element name="description" type="xs:string" minOccurs="0"/>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="statusCode" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAvailableTariffs">
+<xs:sequence>
+<xs:element name="availableTariffsRequest" type="tns:availableTariffsRequest" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="availableTariffsRequest">
+<xs:sequence>
+<xs:element name="catalogId" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="campaignPartNumList" type="xs:string" minOccurs="0"/>
+<xs:element name="channel" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAvailableTariffsResponse">
+<xs:sequence>
+<xs:element name="availableTariffsResponse" type="tns:availableTariffsResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="availableTariffsResponse">
+<xs:sequence>
+<xs:element name="groupProducts" type="tns:product" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="status" type="tns:status" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="product">
+<xs:sequence>
+<xs:element name="activationSMS" type="xs:string" minOccurs="0"/>
+<xs:element name="attributes" type="tns:attribute" minOccurs="0"/>
+<xs:element name="billable" type="xs:string" minOccurs="0"/>
+<xs:element name="cardinality" type="tns:cardinality" minOccurs="0"/>
+<xs:element name="commercialName" type="xs:string" minOccurs="0"/>
+<xs:element name="customerRepSMS" type="xs:string" minOccurs="0"/>
+<xs:element name="deactivationSMS" type="xs:string" minOccurs="0"/>
+<xs:element name="description" type="tns:multiLangString" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="duration" type="xs:string" minOccurs="0"/>
+<xs:element name="errorDescription" type="xs:string" minOccurs="0"/>
+<xs:element name="group" type="xs:string" minOccurs="0"/>
+<xs:element name="iccbId" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="isRecurring" type="xs:string" minOccurs="0"/>
+<xs:element name="label" type="tns:multiLangString" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="mandatory" type="xs:string" minOccurs="0"/>
+<xs:element name="price" type="xs:string" minOccurs="0"/>
+<xs:element name="priductCatalogId" type="xs:string" minOccurs="0"/>
+<xs:element name="productClass" type="xs:string" minOccurs="0"/>
+<xs:element name="productLine" type="xs:string" minOccurs="0"/>
+<xs:element name="provisionable" type="xs:string" minOccurs="0"/>
+<xs:element name="subType" type="xs:string" minOccurs="0"/>
+<xs:element name="technicalName" type="xs:string" minOccurs="0"/>
+<xs:element name="type" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="cardinality">
+<xs:sequence>
+<xs:element name="defaultValue" type="xs:string" minOccurs="0"/>
+<xs:element name="max" type="xs:string" minOccurs="0"/>
+<xs:element name="min" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="hasFakeTariff">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="hasFakeTariffResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getGroupProductsInfo">
+<xs:sequence>
+<xs:element name="groupProductsInfoRequest" type="tns:groupProductsInfoRequest" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="groupProductsInfoRequest">
+<xs:sequence>
+<xs:element name="groupId" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="catalogId" type="xs:string" minOccurs="0"/>
+<xs:element name="channel" type="xs:string" minOccurs="0"/>
+<xs:element name="role" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getGroupProductsInfoResponse">
+<xs:sequence>
+<xs:element name="groupProductsInfoResponse" type="tns:groupProductsInfoResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="groupProductsInfoResponse">
+<xs:sequence>
+<xs:element name="groupProducts" type="tns:product" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="status" type="tns:status" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="validateAssets">
+<xs:sequence>
+<xs:element name="validateRequest" type="tns:validateRequest" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="validateAssetsResponse">
+<xs:sequence>
+<xs:element name="validateAssetResponse" type="tns:validateAssetResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="validateAssetResponse">
+<xs:sequence>
+<xs:element name="mainIntegrationID" type="xs:string" minOccurs="0"/>
+<xs:element name="msisdn" type="xs:string" minOccurs="0"/>
+<xs:element name="rules" type="tns:rule" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="status" type="tns:status" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAvailableProducts">
+<xs:sequence>
+<xs:element name="availableProductsRequest" type="tns:availableProductsRequest" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="availableProductsRequest">
+<xs:sequence>
+<xs:element name="assetListConfiguration" type="tns:asset" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="billingAccountData" type="tns:billingAccount" minOccurs="0"/>
+<xs:element name="channel" type="xs:string" minOccurs="0"/>
+<xs:element name="customerData" type="tns:customer" minOccurs="0"/>
+<xs:element name="msisdn" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAvailableProductsResponse">
+<xs:sequence>
+<xs:element name="availableProductsResponse" type="tns:availableProductsResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="availableProductsResponse">
+<xs:sequence>
+<xs:element name="msisdn" type="xs:string" minOccurs="0"/>
+<xs:element name="products" type="tns:product" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="status" type="tns:status" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getDefaultProfWithoutFlag">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getDefaultProfWithoutFlagResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getGroupProducts">
+<xs:sequence>
+<xs:element name="groupProductsRequest" type="tns:groupProductsRequest" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="groupProductsRequest">
+<xs:sequence>
+<xs:element name="billingAccountData" type="tns:billingAccount" nillable="true" minOccurs="0"/>
+<xs:element name="channel" type="xs:string" minOccurs="0"/>
+<xs:element name="role" type="xs:string" minOccurs="0"/>
+<xs:element name="catalogId" type="xs:string" minOccurs="0"/>
+<xs:element name="currentAssets" type="tns:asset" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="customerData" type="tns:customer" minOccurs="0"/>
+<xs:element name="msisdn" type="xs:string" minOccurs="0"/>
+<xs:element name="groupId" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getGroupProductsResponse">
+<xs:sequence>
+<xs:element name="groupProductsResponse" type="tns:groupProductsResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="groupProductsResponse">
+<xs:sequence>
+<xs:element name="msisdn" type="xs:string" minOccurs="0"/>
+<xs:element name="availableProducts" type="tns:product" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="notAvailableProducts" type="tns:product" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="existingProducts" type="tns:product" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="status" type="tns:status" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getProductInfo">
+<xs:sequence>
+<xs:element name="getProductInfoRequest" type="tns:getProductInfoRequest" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getProductInfoRequest">
+<xs:sequence>
+<xs:element name="catalogId" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="partNum" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getProductInfoResponse">
+<xs:sequence>
+<xs:element name="getProductInformationResponse" type="tns:getProductInformationResponse" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getProductInformationResponse">
+<xs:sequence>
+<xs:element name="products" type="tns:product" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="status" type="tns:status" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

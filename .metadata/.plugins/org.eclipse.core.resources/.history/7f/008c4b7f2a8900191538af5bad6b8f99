@@ -1,0 +1,1865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://vodafone.com.tr/EAI/Common/Header" xmlns:ns100="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetPaymentData/v1" xmlns:ns101="http://vodafone.com.tr/ServiceCatalog/Business/PaymentInquiries/GetPaymentData/v1" xmlns:ns102="http://vodafone.com.tr/ServiceCatalog/Business/PaymentInquiries/GetTCIDDetails/v1" xmlns:ns103="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/CreateNotifyOrder/v1" xmlns:ns42="http://vodafone.com.tr/ServiceCatalog/Business/CustomerDataManagement/ActivateCreditCard/v1" xmlns:ns109="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetBundleRenewalDate/v1" xmlns:ns41="http://vodafone.com.tr/ServiceCatalog/Business/CustomerDataManagement/UpdateContactAddress/v1" xmlns:ns108="http://vodafone.com.tr/ServiceCatalog/Business/CampaignManagement/CancelSecondCampaign/v1" xmlns:ns40="http://vodafone.com.tr/ServiceCatalog/Business/CustomerDataManagement/UpdateBillingAddress/v1" xmlns:ns105="http://vodafone.com.tr/EAI/Common/ResponseEAI" xmlns:ns46="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberManagement/UpdateSubscriberSelfcareAdmin/v1" xmlns:ns104="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberManagement/SendSRInformation/v1" xmlns:ns45="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/NotifyFutureDatedOrder/v1" xmlns:ns107="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberManagement/DeleteVodafoneGroup/v1" xmlns:ns44="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/UpdateOrderAttribute/v1" xmlns:ns106="http://vodafone.com.tr/ServiceCatalog/Business/AssetInquiries/GetAssetOrder/v1" xmlns:ns43="http://vodafone.com.tr/ServiceCatalog/Business/AccountInquiries/GetBillingAccountList/v1" xmlns:ns49="http://vodafone.com.tr/ServiceCatalog/Business/AccountManagement/CreateCreditAlert/v1" xmlns:ns48="http://vodafone.com.tr/ServiceCatalog/Business/AccountManagement/InsertPromiseToPay/v1" xmlns:ns47="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetPersonalData/v1" xmlns:ns113="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/ManageSubDealerSR/v1" xmlns:ns114="http://vodafone.com.tr/ServiceCatalog/Business/ProductInquiries/GetAvailableTariffsList/v1" xmlns:ns111="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetGroupHeadNumber/v1" xmlns:ns112="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetGroupMemberTotal/v1" xmlns:ns110="http://vodafone.com.tr/ServiceCatalog/Business/ProductInquiries/GetAvailableTariffs/v1" xmlns:ns60="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetCreditCard/v1" xmlns:ns51="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/ManageUserInformation/v1" xmlns:ns50="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/ManageDealerInformation/v1" xmlns:ns53="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/ManageRegionalUser/v1" xmlns:ns52="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/ManageRegionalInformation/v1" xmlns:ns119="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetCancellationEligibility/v1" xmlns:ns55="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/GetShopDetails/v1" xmlns:ns118="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetFMCCustomerDetails/v1" xmlns:ns54="http://vodafone.com.tr/ServiceCatalog/Business/AccountManagement/CreateCEMEvent/v1" xmlns:ns117="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetCustomerInfoList/v1" xmlns:ns57="http://vodafone.com.tr/ServiceCatalog/Business/CampaignManagement/ValidateEligibilityForCampaign/v1" xmlns:ns116="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetCancelationEligibility/v1" xmlns:ns56="http://vodafone.com.tr/ServiceCatalog/Business/ProductInquiries/GetOperationCost/v1" xmlns:ns115="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetMNPPortInOrder/v1" xmlns:ns59="http://vodafone.com.tr/ServiceCatalog/Business/ProductInquiries/GetProductName/v1" xmlns:ns58="http://vodafone.com.tr/ServiceCatalog/Business/AccountInquiries/ValidatePTPEligibility/v1" xmlns:ns70="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetSmartScriptQuestions/v1" xmlns:ns71="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetSubscribersByTCKN/v1" xmlns:ns120="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetMNPCancellationEligibility/v1" xmlns:ns121="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberManagement/MembersOrderTrigger/v1" xmlns:ns122="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetGroupMemberList/v1" xmlns:ns123="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetCosbyGroupSnapshot/v1" xmlns:ns124="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/ValidateCosbyMembership/v1" xml
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AssetInquiries/GetAssetList/v1" location="../../Business/AssetInquiries/GetAssetList_v1/Schemas/GetAssetList.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AccountManagement/UpdateBillCycleChangeStatus/v1" location="../../Business/AccountManagement/UpdateBillCycleChangeStatus_v1/Schemas/UpdateBillCycleChangeStatus.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerDataManagement/UpdateBillingAccount/v1" location="../../Business/CustomerDataManagement/UpdateBillingAccount_v1/Schemas/UpdateBillingAccount.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetCustomerIdentification/v1" location="../../Business/CustomerInquiries/GetCustomerIdentification_v1/Schemas/GetCustomerIdentification.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/SuspendAndResumeOrder/v1" location="../../Business/OrderManagement/SuspendAndResumeOrder_v1/Schemas/SuspendAndResumeOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/SuspendAndResumeOrder/v2" location="../../Business/OrderManagement/SuspendAndResumeOrder_v2/Schemas/SuspendAndResumeOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/UpdateOrderStatus/v1" location="../../Business/OrderManagement/UpdateOrderStatus_v1/Schemas/UpdateOrderStatus.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/CancelOrder/v1" location="../../Business/OrderManagement/CancelOrder_v1/Schemas/CancelOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/UpdateItemsDates/v1" location="../../Business/OrderManagement/UpdateItemsDates_v1/Schemas/UpdateItemsDates.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/UpdateOrderAttribute/v1" location="../../Business/OrderManagement/UpdateOrderAttribute_v1/Schemas/UpdateOrderAttribute.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AccountManagement/SetDirectDebitOrdersStatus/v1" location="../../Business/AccountManagement/SetDirectDebitOrdersStatus_v1/Schemas/SetDirectDebitOrdersStatus.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetDirectoryCustomerName/v1" location="../../Business/CustomerInquiries/GetDirectoryCustomerName_v1/Schemas/GetDirectoryCustomerName.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetDirectoryMSISDNList/v1" location="../../Business/CustomerInquiries/GetDirectoryMSISDNList_v1/Schemas/GetDirectoryMSISDNList.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerCare/InvokeGenericWorkflow/v1" location="../../Business/CustomerCare/InvokeGenericWorkflow_v1/Schemas/InvokeGenericWorkflow.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerCare/InvokeGenericQuery/v1" location="../../Business/CustomerCare/InvokeGenericQuery_v1/Schemas/InvokeGenericQuery.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerDataManagement/UpdateBillingAddress/v1" location="../../Business/CustomerDataManagement/UpdateBillingAddress_v1/Schemas/UpdateBillingAddress.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerDataManagement/UpdateContactAddress/v1" location="../../Business/CustomerDataManagement/UpdateContactAddress_v1/Schemas/UpdateContactAddress.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetCBUSubscribers/v1" location="../../Business/SubscriberInquiries/GetCBUSubscribers_v1/Schemas/GetCBUSubscribers.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AccountInquiries/GetMSISDNList/v1" location="../../Business/AccountInquiries/GetMSISDNList_v1/Schemas/GetMSISDNList.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberManagement/ManageServiceRequest/v1" location="../../Business/SubscriberManagement/ManageServiceRequest_v1/Schemas/ManageServiceRequest.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetCustomer/v1" location="../../Business/CustomerInquiries/GetCustomer_v1/Schemas/GetCustomer.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetContactDetails/v1" location="../../Business/CustomerInquiries/GetContactDetails_v1/Schemas/GetContactDetails.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AccountInquiries/GetBillingAccountsAndServicesLists/v1" location="../../Business/AccountInquiries/GetBillingAccountsAndServicesLists_v1/Schemas/GetBillingAccountsAndServicesLists.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AccountManagement/CreateAlert/v1" location="../../Business/AccountManagement/CreateAlert_v1/Schemas/CreateAlert.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/CreateModifyOrder/v1" location="../../Business/OrderManagement/CreateModifyOrder_v1/Schemas/CreateModifyOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/CreateOrder/v1" location="../../Business/OrderManagement/CreateOrder_v1/Schemas/CreateOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/GetOpenOrders/v1" location="../../Business/OrderManagement/GetOpenOrders_v1/Schemas/GetOpenOrders.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/CreateDunningOrder/v1" location="../../Business/OrderManagement/CreateDunningOrder_v1/Schemas/CreateDunningOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/NotifyFutureDatedOrder/v1" location="../../Business/OrderManagement/NotifyFutureDatedOrder_v1/Schemas/NotifyFutureDatedOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AccountInquiries/GetBillingAccountList/v1" location="../../Business/AccountInquiries/GetBillingAccountList_v1/Schemas/GetBillingAccountList.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberManagement/UpdateSubscriberSelfcareAdmin/v1" location="../../Business/SubscriberManagement/UpdateSubscriberSelfcareAdmin_v1/Schemas/UpdateSubscriberSelfcareAdmin.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetSelfcareCustomerIdentification/v1" location="../../Business/CustomerInquiries/GetSelfcareCustomerIdentification_v1/Schemas/GetSelfcareCustomerIdentification.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AccountManagement/InsertPromiseToPay/v1" location="../../Business/AccountManagement/InsertPromiseToPay_v1/Schemas/InsertPromiseToPay.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/ManageDealerInformation/v1" location="../../Business/PartnerManagement/ManageDealerInformation_v1/Schemas/ManageDealerInformation.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/ManageUserInformation/v1" location="../../Business/PartnerManagement/ManageUserInformation_v1/Schemas/ManageUserInformation.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/ManageRegionalInformation/v1" location="../../Business/PartnerManagement/ManageRegionalInformation_v1/Schemas/ManageRegionalInformation.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/ManageRegionalUser/v1" location="../../Business/PartnerManagement/ManageRegionalUser_v1/Schemas/ManageRegionalUser.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AccountManagement/CreateCEMEvent/v1" location="../../Business/AccountManagement/CreateCEMEvent_v1/Schemas/CreateCEMEvent.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/GetShopDetails/v1" location="../../Business/PartnerManagement/GetShopDetails_v1/Schemas/GetShopDetails.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/ProductInquiries/GetOperationCost/v1" location="../../Business/ProductInquiries/GetOperationCost_v1/Schemas/GetOperationCost.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AccountManagement/CreateCreditAlert/v1" location="../../Business/AccountManagement/CreateCreditAlert_v1/Schemas/CreateCreditAlert.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AccountInquiries/ValidatePTPEligibility/v1" location="../../Business/AccountInquiries/ValidatePTPEligibility_v1/Schemas/ValidatePTPEligibility.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/ProductInquiries/GetProductName/v1" location="../../Business/ProductInquiries/GetProductName_v1/Schemas/GetProductName.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetCreditCard/v1" location="../../Business/CustomerInquiries/GetCreditCard_v1/Schemas/GetCreditCard.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerDataManagement/ActivateCreditCard/v1" location="../../Business/CustomerDataManagement/ActivateCreditCard_v1/Schemas/ActivateCreditCard.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CampaignManagement/ManageBadDebtCampaignFlag/v1" location="../../Business/CampaignManagement/ManageBadDebtCampaignFlag_v1/Schemas/ManageBadDebtCampaignFlag.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetCustomerInformation/v1" location="../../Business/CustomerInquiries/GetCustomerInformation_v1/Schemas/GetCustomerInformation.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetPersonalData/v1" location="../../Business/CustomerInquiries/GetPersonalData_v1/Schemas/GetPersonalData.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/ValidateTCKN/v1" location="../../Business/CustomerInquiries/ValidateTCKN_v1/Schemas/ValidateTCKN.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerCare/ValidateFraud/v1" location="../../Business/CustomerCare/ValidateFraud_v1/Schemas/ValidateFraud.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/MobileSignatureNotification/v1" location="../../Business/OrderManagement/MobileSignatureNotification_v1/Schemas/MobileSignatureNotification.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetActiveAgreements/v1" location="../../Business/CustomerInquiries/GetActiveAgreements_v1/Schemas/GetActiveAgreements.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetSmartScriptQuestions/v1" location="../../Business/SubscriberInquiries/GetSmartScriptQuestions_v1/Schemas/GetSmartScriptQuestions.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetSubscribersByTCKN/v1" location="../../Business/SubscriberInquiries/GetSubscribersByTCKN_v1/Schemas/GetSubscribersByTCKN.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerManagement/SetLoyalty/v1" location="../../Business/CustomerManagement/SetLoyalty_v1/Schemas/SetLoyalty.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetCustomerDetails/v1" location="../../Business/CustomerInquiries/GetCustomerDetails_v1/Schemas/GetCustomerDetails.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerManagement/UpdateLoyalty/v1" location="../../Business/CustomerManagement/UpdateLoyalty_v1/Schemas/UpdateLoyalty.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetMSISDNStatus/v1" location="../../Business/CustomerInquiries/GetMSISDNStatus_v1/Schemas/GetMSISDNStatus.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/UpdateCoupledNumber/v1" location="../../Business/OrderManagement/UpdateCoupledNumber_v1/Schemas/UpdateCoupledNumber.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetMSISDNListByMSISDN/v1" location="../../Business/SubscriberInquiries/GetMSISDNListByMSISDN_v1/Schemas/GetMSISDNListByMSISDN.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityManagement/UpdateTAPortinOrder/v1" location="../../Business/PortabilityManagement/UpdateTAPortinOrder_v1/Schemas/UpdateTAPortinOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityManagement/CreateMNPRequest/v1" location="../../Business/PortabilityManagement/CreateMNPRequest_v1/Schemas/CreateMNPRequest.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetMSISDNChangeHistory/v1" location="../../Business/SubscriberInquiries/GetMSISDNChangeHistory_v1/Schemas/GetMSISDNChangeHistory.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AssetInquiries/GetAssetDetailList/v1" location="../../Business/AssetInquiries/GetAssetDetailList_v1/Schemas/GetAssetDetailList.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AssetManagement/UpdateBarringStatus/v1" location="../../Business/AssetManagement/UpdateBarringStatus_v1/Schemas/UpdateBarringStatus.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/DocumentManagement/ManageDumanProcesses/v1" location="../../Business/DocumentManagement/ManageDumanProcesses_v1/Schemas/ManageDumanProcesses.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/ValidateMernisStatus/v1" location="../../Business/SubscriberInquiries/ValidateMernisStatus_v1/Schemas/ValidateMernisStatus.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/ValidateGibStatus/v1" location="../../Business/CustomerInquiries/ValidateGibStatus_v1/Schemas/ValidateGibStatus.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AssetInquiries/GetBundleConsumable/v1" location="../../Business/AssetInquiries/GetBundleConsumable_v1/Schemas/GetBundleConsumable.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AssetInquiries/GetAuthorizeAddon/v1" location="../../Business/AssetInquiries/GetAuthorizeAddon_v1/Schemas/GetAuthorizeAddon.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AssetInquiries/GetBundleMSISDNList/v1" location="../../Business/AssetInquiries/GetBundleMSISDNList_v1/Schemas/GetBundleMSISDNList.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/DocumentManagement/CreateMissingDocEvent/v1" location="../../Business/DocumentManagement/CreateMissingDocEvent_v1/Schemas/CreateMissingDocEvent.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityManagement/CreatePortOutRequest/v1" location="../../Business/PortabilityManagement/CreatePortOutRequest_v1/Schemas/CreatePortOutRequest.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityManagement/PortOutCancellationRequest/v1" location="../../Business/PortabilityManagement/PortOutCancellationRequest_v1/Schemas/PortOutCancellationRequest.xsd"/>
+    <import namespace="http://vodafone.com.tr/EAI/Common/RequestEAI" location="../../../../GlobalCommonResources/Schemas/Common/RequestEAI.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetServiceRequestDetails/v1" location="../../Business/SubscriberInquiries/GetServiceRequestDetails_v1/Schemas/GetServiceRequestDetails.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetDataSharingMainLine/v1" location="../../Business/SubscriberInquiries/GetDataSharingMainLine_v1/Schemas/GetDataSharingMainLine.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetTCIDDetails/v1" location="../../Business/CustomerInquiries/GetTCIDDetails_v1/Schemas/GetTCIDDetails.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/CreateNotifyOrder/v1" location="../../Business/OrderManagement/CreateNotifyOrder_v1/Schemas/CreateNotifyOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PaymentInquiries/GetPaymentData/v1" location="../../Business/PaymentInquiries/GetPaymentData_v1/Schemas/GetPaymentData.xsd"/>
+    <import namespace="http://vodafone.com.tr/EAI/Common/ResponseEAI" location="../../../../GlobalCommonResources/Schemas/Common/ResponseEAI.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberManagement/SendSRInformation/v1" location="../../Business/SubscriberManagement/SendSRInformation_v1/Schemas/SendSRInformation.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AssetInquiries/GetAssetOrder/v1" location="../../Business/AssetInquiries/GetAssetOrder_v1/Schemas/GetAssetOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberManagement/DeleteVodafoneGroup/v1" location="../../Business/SubscriberManagement/DeleteVodafoneGroup_v1/Schemas/DeleteVodafoneGroup.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetBundleRenewalDate/v1" location="../../Business/CustomerInquiries/GetBundleRenewalDate_v1/Schemas/GetBundleRenewalDate.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetGroupHeadNumber/v1" location="../../Business/SubscriberInquiries/GetGroupHeadNumber_v1/Schemas/GetGroupHeadNumber.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetGroupMemberTotal/v1" location="../../Business/SubscriberInquiries/GetGroupMemberTotal_v1/Schemas/GetGroupMemberTotal.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/ManageSubDealerSR/v1" location="../../Business/PartnerManagement/ManageSubDealerSR_v1/Schemas/ManageSubDealerSR.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetCustomerInfoList/v1" location="../../Business/SubscriberInquiries/GetCustomerInfoList_v1/Schemas/GetCustomerInfoList.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetFMCCustomerDetails/v1" location="../../Business/SubscriberInquiries/GetFMCCustomerDetails_v1/Schemas/GetFMCCustomerDetails.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetMNPPortInOrder/v1" location="../../Business/SubscriberInquiries/GetMNPPortInOrder_v1/Schemas/GetMNPPortInOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetMNPCancellationEligibility/v1" location="../../Business/SubscriberInquiries/GetMNPCancellationEligibility_v1/Schemas/GetMNPCancellationEligibility.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CampaignManagement/CancelSecondCampaign/v1" location="../../Business/CampaignManagement/CancelSecondCampaign_v1/Schemas/CancelSecondCampaign.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberManagement/MembersOrderTrigger/v1" location="../../Business/SubscriberManagement/MembersOrderTrigger_v1/Schemas/MembersOrderTrigger.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetGroupMemberList/v1" location="../../Business/SubscriberInquiries/GetGroupMemberList_v1/Schemas/GetGroupMemberList.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetCosbyGroupSnapshot/v1" location="../../Business/SubscriberInquiries/GetCosbyGroupSnapshot_v1/Schemas/GetCosbyGroupSnapshot.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetCancellationEligibility/v1" location="../../Business/SubscriberInquiries/GetCancellationEligibility_v1/Schemas/GetCancellationEligibility.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/ValidateCosbyMembership/v1" location="../../Business/SubscriberInquiries/ValidateCosbyMembership_v1/Schemas/ValidateCosbyMembership.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetMemberLimitsAndUsages/v1" location="../../Business/SubscriberInquiries/GetMemberLimitsAndUsages_v1/Schemas/GetMemberLimitsAndUsages.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AssetInquiries/GetSVBQuota/v1" location="../../Business/AssetInquiries/GetSVBQuota_v1/Schemas/GetSVBQuota.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetCosbyGroupConfiguration/v1" location="../../Business/SubscriberInquiries/GetCosbyGroupConfiguration_v1/Schemas/GetCosbyGroupConfiguration.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/ProductInquiries/GetAvailableTariffsList/v1" location="../../Business/ProductInquiries/GetAvailableTariffsList_v1/Schemas/GetAvailableTariffsList.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/UpdateSVBAttribute/v1" location="../../Business/OrderManagement/UpdateSVBAttribute_v1/Schemas/UpdateSVBAttribute.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/UpdateSVBAttributeOrder/v1" location="../../Business/OrderManagement/UpdateSVBAttributeOrder_v1/Schemas/UpdateSVBAttributeOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetAddOnsAgreementsAndOpenSRs/v1" location="../../Business/CustomerInquiries/GetAddOnsAgreementsAndOpenSRs_v1/Schemas/GetAddOnsAgreementsAndOpenSRs.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberManagement/ChangeMSISDN/v1" location="../../Business/SubscriberManagement/ChangeMSISDN_v1/Schemas/ChangeMSISDN.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CampaignManagement/ValidateEligibilityForCampaign/v1" location="../../Business/CampaignManagement/ValidateEligibilityForCampaign_v1/Schemas/ValidateEligibilityForCampaign.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/SubmitOrder/v1" location="../../Business/OrderManagement/SubmitOrder_v1/Schemas/SubmitOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetSubscriberStatus/v1" location="../../Business/SubscriberInquiries/GetSubscriberStatus_v1/Schemas/GetSubscriberStatus.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AssetInquiries/GetAssetList/v2" location="../../Business/AssetInquiries/GetAssetList_v2/Schemas/GetAssetList.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AssetInquiries/GetAssetList/v3" location="../../Business/AssetInquiries/GetAssetList_v3/Schemas/GetAssetList.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/AccountInquiries/GetBillingAccountList/v2" location="../../Business/AccountInquiries/GetBillingAccountList_v2/Schemas/GetBillingAccountList.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetCustomer/v2" location="../../Business/CustomerInquiries/GetCustomer_v2/Schemas/GetCustomer.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/CreateModifyOrder/v2" location="../../Business/OrderManagement/CreateModifyOrder_v2/Schemas/CreateModifyOrder.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/CancelFDOByKeyword/v1" location="../../Business/OrderManagement/CancelFDOByKeyword_v1/Schemas/CancelFDOByKeyword.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/CreateBulkOrders/v1" location="../../Business/OrderManagement/CreateBulkOrders_v1/Schemas/CreateBulkOrders.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/CreateBulkRequest/v1" location="../../Business/OrderManagement/CreateBulkRequest_v1/Schemas/CreateBulkRequest.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/GetBulkOrderStatus/v1" location="../../Business/OrderManagement/GetBulkOrderStatus_v1/Schemas/GetBulkOrderStatus.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/GetBulkStatus/v1" location="../../Business/OrderManagement/GetBulkStatus_v1/Schemas/GetBulkStatus.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/ChannelOrderControlInsert/v1" location="../../Business/OrderManagement/ChannelOrderControlInsert_v1/Schemas/ChannelOrderControlInsert.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/ChannelOrderControlDelete/v1" location="../../Business/OrderManagement/ChannelOrderControlDelete_v1/Schemas/ChannelOrderControlDelete.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/SetOwnerContactForSubscriber/v1" location="../../Business/CustomerInquiries/SetOwnerContactForSubscriber_v1/Schemas/SetOwnerContactForSubscriber.xsd"/>
+    <import namespace="http://group.vodafone.com/schema/vbo/order/sales-order/v2" location="../../../../CSM/CSM_SalesOrder/SalesOrderVBO.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/OrderManagement/CreateHandsetOrder/v1" location="../../Business/OrderManagement/CreateHandsetOrder_v1/Schemas/CreateHandsetOrder.xsd"/>
+    <import namespace="http://group.vodafone.com/schema/vbo/identity/workforce-system-user-account/v1" location="../../../../CSM/WorkforceSystemUserAccountVBO.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/DeleteUser/v1" location="../../Business/PartnerManagement/DeleteUser_v1/Schemas/DeleteUser.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/UpdateUser/v1" location="../../Business/PartnerManagement/UpdateUser_v1/Schemas/UpdateUser.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/PartnerManagement/CreateUser/v1" location="../../Business/PartnerManagement/CreateUser_v1/Schemas/CreateUser.xsd"/>
+    <import namespace="http://group.vodafone.com/contract/vho/header/v1" location="../../../../CSM/CSM_Common/Header.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerCare/UpdatePBMAndCommPerm/v2" location="../../Business/CustomerCare/UpdatePBMAndCommPerm_v2/Schemas/UpdatePBMAndCommPerm.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerCare/UpdatePBMAndCommPerm/v1" location="../../Business/CustomerCare/UpdatePBMAndCommPerm_v1/Schemas/UpdatePBMAndCommPerm.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerCare/GetBulkCorrelationIdByRefNo/v1" location="../../Business/CustomerCare/GetBulkCorrelationIdByRefNo_v1/Schemas/GetBulkCorrelationIdByRefNo.xsd"/>
+    <import namespace="http://vodafone.com.tr/EAI/Common/ResponseCodes" location="../../../../GlobalCommonResources/Schemas/Common/ResponseCodes.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetOrderTransData/v1" location="../../Business/CustomerInquiries/GetOrderTransData_v1/Schemas/GetOrderTransData.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/DocumentManagement/SendCompletedDocumentation/v1" location="../../Business/DocumentManagement/SendCompletedDocumentation_v1/Schemas/SendCompletedDocumentation.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/DocumentManagement/GetFormDetails/v1" location="../../Business/DocumentManagement/GetFormDetails_v1/Schemas/GetFormDetails.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerScoring/UpdateKKBData/v1" location="../../Business/CustomerScoring/UpdateKKBData_v1/Schemas/UpdateKKBData.xsd"/>
+    <import namespace="http://vodafone.com.tr/EAI/Common/Header" location="../../../../GlobalCommonResources/Schemas/Common/Header.xsd"/>
+    <import namespace="http://group.vodafone.com/contract/vfo/fault/v1" location="../../../../CSM/CSM_Common/Fault.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/CustomerParty/v1" location="../../Business/CustomerInquiries/CustomerParty_v1/Schemas/CustomerParty.xsd"/>
+    <import namespace="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetServiceRequestDetailsCSM/v1" location="../../Business/SubscriberInquiries/GetServiceRequestDetails_v1/Schemas/GetServiceRequestDetailsCSM.xsd"/>
+    <message name="GetAssetListRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns5:GetAssetListRequest"/>
+    </message>
+    <message name="GetAssetListResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns5:GetAssetListResponse"/>
+    </message>
+    <message name="CreateAlertRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns35:CreateAlertRequest"/>
+    </message>
+    <message name="CreateAlertResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns35:CreateAlertResponse"/>
+    </message>
+    <message name="GetCustomerRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns32:GetCustomerRequest"/>
+    </message>
+    <message name="GetCustomerResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns32:GetCustomerResponse"/>
+    </message>
+    <message name="GetContactDetailsRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns33:GetContactDetailsRequest"/>
+    </message>
+    <message name="GetContactDetailsResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns33:GetContactDetailsResponse"/>
+    </message>
+    <message name="UpdateBillCycleChangeStatusRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns9:UpdateBillCycleChangeStatusRequest"/>
+    </message>
+    <message name="UpdateBillCycleChangeStatusResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns9:UpdateBillCycleChangeStatusResponse"/>
+    </message>
+    <message name="CreateModifyOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns36:CreateModifyOrderRequest"/>
+    </message>
+    <message name="CreateModifyOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns36:CreateModifyOrderResponse"/>
+    </message>
+    <message name="UpdateBillingAccountRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns11:UpdateBillingAccountRequest"/>
+    </message>
+    <message name="UpdateBillingAccountResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="GetSelfcareCustomerIdentificationRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns17:GetSelfcareCustomerIdentificationRequest"/>
+    </message>
+    <message name="GetSelfcareCustomerIdentificationResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns17:GetSelfcareCustomerIdentificationResponse"/>
+    </message>
+    <message name="GetCustomerIdentificationRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns13:GetCustomerIdentificationRequest"/>
+    </message>
+    <message name="GetCustomerIdentificationResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns13:GetCustomerIdentificationResponse"/>
+    </message>
+    <message name="GetOperationCostRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns56:GetOperationCostRequest"/>
+    </message>
+    <message name="GetOperationCostResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns56:GetOperationCostResponse"/>
+    </message>
+    <message name="UpdateSubscriberSelfcareAdminRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns15:UpdateSubscriberSelfcareAdminRequest"/>
+    </message>
+    <message name="UpdateSubscriberSelfcareAdminResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="SuspendAndResumeOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns12:SuspendAndResumeOrderRequest"/>
+    </message>
+    <message name="SuspendAndResumeOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns12:SuspendAndResumeOrderResponse"/>
+    </message>
+    <message name="UpdateOrderStatusRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns14:UpdateOrderStatusRequest"/>
+    </message>
+    <message name="UpdateOrderStatusResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns14:UpdateOrderStatusResponse"/>
+    </message>
+    <message name="CancelOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns18:CancelOrderRequest"/>
+    </message>
+    <message name="CancelOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns18:CancelOrderResponse"/>
+    </message>
+    <message name="UpdateItemsDatesRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns19:UpdateItemsDatesRequest"/>
+    </message>
+    <message name="UpdateItemsDatesResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="UpdateOrderAttributeRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns44:UpdateOrderAttributeRequest"/>
+    </message>
+    <message name="UpdateOrderAttributeResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="SetDirectDebitOrdersStatusRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns21:SetDirectDebitOrdersStatusRequest"/>
+    </message>
+    <message name="SetDirectDebitOrdersStatusResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="GetMSISDNListRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns27:GetMSISDNListRequest"/>
+    </message>
+    <message name="GetMSISDNListResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns27:GetMSISDNListResponse"/>
+    </message>
+    <message name="InvokeGenericQueryRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns31:InvokeGenericQueryRequest"/>
+    </message>
+    <message name="InvokeGenericQueryResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns31:InvokeGenericQueryResponse"/>
+    </message>
+    <message name="InvokeGenericWorkflowRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns30:InvokeGenericWorkflowRequest"/>
+    </message>
+    <message name="InvokeGenericWorkflowResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns30:InvokeGenericWorkflowResponse"/>
+    </message>
+    <message name="GetDirectoryCustomerNameRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns22:GetDirectoryCustomerNameRequest"/>
+    </message>
+    <message name="GetDirectoryCustomerNameResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns22:GetDirectoryCustomerNameResponse"/>
+    </message>
+    <message name="GetDirectoryMSISDNListRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns23:GetDirectoryMSISDNListRequest"/>
+    </message>
+    <message name="GetDirectoryMSISDNListResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns23:GetDirectoryMSISDNListResponse"/>
+    </message>
+    <message name="GetBillingAccountsAndServicesListsRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns34:GetBillingAccountsAndServicesListsRequest"/>
+    </message>
+    <message name="GetBillingAccountsAndServicesListsResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns34:GetBillingAccountsAndServicesListsResponse"/>
+    </message>
+    <message name="UpdateBillingAddressRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns40:UpdateBillingAddressRequest"/>
+    </message>
+    <message name="UpdateBillingAddressResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="UpdateContactAddressRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns41:UpdateContactAddressRequest"/>
+    </message>
+    <message name="UpdateContactAddressResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="GetCBUSubscribersRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns26:GetCBUSubscribersRequest"/>
+    </message>
+    <message name="GetCBUSubscribersResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns26:GetCBUSubscribersResponse"/>
+    </message>
+    <message name="ActivateCreditCardRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns42:ActivateCreditCardRequest"/>
+    </message>
+    <message name="ActivateCreditCardResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="ManageServiceRequestRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns28:ManageServiceRequestRequest"/>
+    </message>
+    <message name="ManageServiceRequestResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns28:ManageServiceRequestResponse"/>
+    </message>
+    <message name="ValidatePTPEligibilityRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns58:ValidatePTPEligibilityRequest"/>
+    </message>
+    <message name="ValidatePTPEligibilityResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns58:ValidatePTPEligibilityResponse"/>
+    </message>
+    <message name="CreateOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns37:CreateOrderRequest"/>
+    </message>
+    <message name="CreateOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns37:CreateOrderResponse"/>
+    </message>
+    <message name="GetOpenOrdersRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns38:GetOpenOrdersRequest"/>
+    </message>
+    <message name="GetOpenOrdersResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns38:GetOpenOrdersResponse"/>
+    </message>
+    <message name="CreateDunningOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns39:CreateDunningOrderRequest"/>
+    </message>
+    <message name="CreateDunningOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns39:CreateDunningOrderResponse"/>
+    </message>
+    <message name="NotifyFutureDatedOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns45:NotifyFutureDatedOrderRequest"/>
+    </message>
+    <message name="NotifyFutureDatedOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns45:NotifyFutureDatedOrderResponse"/>
+    </message>
+    <message name="GetBillingAccountListRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns43:GetBillingAccountListRequest"/>
+    </message>
+    <message name="GetBillingAccountListResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns43:GetBillingAccountListResponse"/>
+    </message>
+    <message name="InsertPromiseToPayRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns48:InsertPromiseToPayRequest"/>
+    </message>
+    <message name="InsertPromiseToPayResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns48:InsertPromiseToPayResponse"/>
+    </message>
+    <message name="CreateCreditAlertRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns49:CreateCreditAlertRequest"/>
+    </message>
+    <message name="CreateCreditAlertResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns49:CreateCreditAlertResponse"/>
+    </message>
+    <message name="ManageDealerInformationRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns50:ManageDealerInformationRequest"/>
+    </message>
+    <message name="ManageDealerInformationResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="ManageUserInformationRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns51:ManageUserInformationRequest"/>
+    </message>
+    <message name="ManageUserInformationResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="ManageRegionalInformationRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns52:ManageRegionalInformationRequest"/>
+    </message>
+    <message name="ManageRegionalInformationResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="ManageRegionalUserRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns53:ManageRegionalUserRequest"/>
+    </message>
+    <message name="ManageRegionalUserResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="CreateCEMEventRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns54:CreateCEMEventRequest"/>
+    </message>
+    <message name="CreateCEMEventResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns54:CreateCEMEventResponse"/>
+    </message>
+    <message name="GetShopDetailsRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns55:GetShopDetailsRequest"/>
+    </message>
+    <message name="GetShopDetailsResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns55:GetShopDetailsResponse"/>
+    </message>
+    <message name="GetProductNameRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns59:GetProductNameRequest"/>
+    </message>
+    <message name="GetProductNameResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns59:GetProductNameResponse"/>
+    </message>
+    <message name="GetCreditCardRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns60:GetCreditCardRequest"/>
+    </message>
+    <message name="GetCreditCardResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns60:GetCreditCardResponse"/>
+    </message>
+    <message name="GetPersonalDataRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns47:GetPersonalDataRequest"/>
+    </message>
+    <message name="GetPersonalDataResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns47:GetPersonalDataResponse"/>
+    </message>
+    <message name="GetCustomerInformationRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns61:GetCustomerInformationRequest"/>
+    </message>
+    <message name="GetCustomerInformationResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns61:GetCustomerInformationResponse"/>
+    </message>
+    <message name="ManageBadDebtCampaignFlagRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns65:ManageBadDebtCampaignFlagRequest"/>
+    </message>
+    <message name="ManageBadDebtCampaignFlagResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="ValidateFraudRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns67:ValidateFraudRequest"/>
+    </message>
+    <message name="ValidateFraudResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns67:ValidateFraudResponse"/>
+    </message>
+    <message name="ValidateTCKNRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns66:ValidateTCKNRequest"/>
+    </message>
+    <message name="ValidateTCKNResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="MobileSignatureNotificationRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns68:MobileSignatureNotificationRequest"/>
+    </message>
+    <message name="MobileSignatureNotificationResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="GetActiveAgreementsRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns69:GetActiveAgreementsRequest"/>
+    </message>
+    <message name="GetActiveAgreementsResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns69:GetActiveAgreementsResponse"/>
+    </message>
+    <message name="GetSmartScriptQuestionsRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns70:GetSmartScriptQuestionsRequest"/>
+    </message>
+    <message name="GetSmartScriptQuestionsResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns70:GetSmartScriptQuestionsResponse"/>
+    </message>
+    <message name="GetSubscribersByTCKNRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns71:GetSubscribersByTCKNRequest"/>
+    </message>
+    <message name="GetSubscribersByTCKNResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns71:GetSubscribersByTCKNResponse"/>
+    </message>
+    <message name="SetLoyaltyRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns72:SetLoyaltyRequest"/>
+    </message>
+    <message name="SetLoyaltyResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns72:SetLoyaltyResponse"/>
+    </message>
+    <message name="GetCustomerDetailsRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns73:GetCustomerDetailsRequest"/>
+    </message>
+    <message name="GetCustomerDetailsResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns73:GetCustomerDetailsResponse"/>
+    </message>
+    <message name="UpdateLoyaltyRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns74:UpdateLoyaltyRequest"/>
+    </message>
+    <message name="UpdateLoyaltyResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns74:UpdateLoyaltyResponse"/>
+    </message>
+    <message name="GetMSISDNStatusRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns75:GetMSISDNStatusRequest"/>
+    </message>
+    <message name="GetMSISDNStatusResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns75:GetMSISDNStatusResponse"/>
+    </message>
+    <message name="CreateMNPRequestRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns83:CreateMNPRequestRequest"/>
+    </message>
+    <message name="CreateMNPRequestResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns83:CreateMNPRequestResponse"/>
+    </message>
+    <message name="UpdateCoupledNumberRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns77:UpdateCoupledNumberRequest"/>
+    </message>
+    <message name="UpdateCoupledNumberResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns77:UpdateCoupledNumberResponse"/>
+    </message>
+    <message name="GetMSISDNListByMSISDNRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns78:GetMSISDNListByMSISDNRequest"/>
+    </message>
+    <message name="GetMSISDNListByMSISDNResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns78:GetMSISDNListByMSISDNResponse"/>
+    </message>
+    <message name="UpdateTAPortinOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns82:UpdateTAPortinOrderRequest"/>
+    </message>
+    <message name="UpdateTAPortinOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns82:UpdateTAPortinOrderResponse"/>
+    </message>
+    <message name="GetMSISDNChangeHistoryRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns85:GetMSISDNChangeHistoryRequest"/>
+    </message>
+    <message name="GetMSISDNChangeHistoryResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns85:GetMSISDNChangeHistoryResponse"/>
+    </message>
+    <message name="GetAssetDetailListRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns87:GetAssetDetailListRequest"/>
+    </message>
+    <message name="GetAssetDetailListResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns87:GetAssetDetailListResponse"/>
+    </message>
+    <message name="UpdateBarringStatusRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns88:UpdateBarringStatusRequest"/>
+    </message>
+    <message name="UpdateBarringStatusResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="ManageDumanProcessesRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns89:ManageDumanProcessesRequest"/>
+    </message>
+    <message name="ManageDumanProcessesResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="ValidateMernisStatusRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns90:ValidateMernisStatusRequest"/>
+    </message>
+    <message name="ValidateMernisStatusResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns90:ValidateMernisStatusResponse"/>
+    </message>
+    <message name="ValidateGibStatusRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns91:ValidateGibStatusRequest"/>
+    </message>
+    <message name="ValidateGibStatusResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns91:ValidateGibStatusResponse"/>
+    </message>
+    <message name="GetBundleConsumableRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns79:GetBundleConsumableRequest"/>
+    </message>
+    <message name="GetBundleConsumableResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns79:GetBundleConsumableResponse"/>
+    </message>
+    <message name="GetBundleMSISDNListRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns93:GetBundleMSISDNListRequest"/>
+    </message>
+    <message name="GetBundleMSISDNListResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns93:GetBundleMSISDNListResponse"/>
+    </message>
+    <message name="GetAuthorizeAddonRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns92:GetAuthorizeAddonRequest"/>
+    </message>
+    <message name="GetAuthorizeAddonResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns92:GetAuthorizeAddonResponse"/>
+    </message>
+    <message name="CreateMissingDocEventRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns94:CreateMissingDocEventRequest"/>
+    </message>
+    <message name="CreateMissingDocEventResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="CreatePortOutRequestRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns84:CreatePortOutRequestRequest"/>
+    </message>
+    <message name="CreatePortOutRequestResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="PortOutCancellationRequestRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns95:PortOutCancellationRequestRequest"/>
+    </message>
+    <message name="PortOutCancellationRequestResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="GetServiceRequestDetailsRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns97:GetServiceRequestDetailsRequest"/>
+    </message>
+    <message name="GetServiceRequestDetailsResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns97:GetServiceRequestDetailsResponse"/>
+    </message>
+    <message name="GetDataSharingMainLineRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns98:GetDataSharingMainLineRequest"/>
+    </message>
+    <message name="GetDataSharingMainLineResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns98:GetDataSharingMainLineResponse"/>
+    </message>
+    <message name="GetTCIDDetailsRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns99:GetTCIDDetailsRequest"/>
+    </message>
+    <message name="GetTCIDDetailsResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns99:GetTCIDDetailsResponse"/>
+    </message>
+    <message name="GetPaymentDataRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns101:GetPaymentDataRequest"/>
+    </message>
+    <message name="GetPaymentDataResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns101:GetPaymentDataResponse"/>
+    </message>
+    <message name="CreateNotifyOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns103:CreateNotifyOrderRequest"/>
+    </message>
+    <message name="CreateNotifyOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns103:CreateNotifyOrderResponse"/>
+    </message>
+    <message name="GetAssetOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns106:GetAssetOrderRequest"/>
+    </message>
+    <message name="GetAssetOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns106:GetAssetOrderResponse"/>
+    </message>
+    <message name="DeleteVodafoneGroupRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns107:DeleteVodafoneGroupRequest"/>
+    </message>
+    <message name="DeleteVodafoneGroupResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="CancelSecondCampaignRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns108:CancelSecondCampaignRequest"/>
+    </message>
+    <message name="CancelSecondCampaignResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns108:CancelSecondCampaignResponse"/>
+    </message>
+    <message name="GetBundleRenewalDateRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns109:GetBundleRenewalDateRequest"/>
+    </message>
+    <message name="GetBundleRenewalDateResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns109:GetBundleRenewalDateResponse"/>
+    </message>
+    <message name="GetAvailableTariffsListRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns114:GetAvailableTariffsListRequest"/>
+    </message>
+    <message name="GetAvailableTariffsListResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns114:GetAvailableTariffsListResponse"/>
+    </message>
+    <message name="GetGroupHeadNumberRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns111:GetGroupHeadNumberRequest"/>
+    </message>
+    <message name="GetGroupHeadNumberResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns111:GetGroupHeadNumberResponse"/>
+    </message>
+    <message name="GetGroupMemberTotalRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns112:GetGroupMemberTotalRequest"/>
+    </message>
+    <message name="GetGroupMemberTotalResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns112:GetGroupMemberTotalResponse"/>
+    </message>
+    <message name="ManageSubDealerSRRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns113:ManageSubDealerSRRequest"/>
+    </message>
+    <message name="ManageSubDealerSRResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns113:ManageSubDealerSRResponse"/>
+    </message>
+    <message name="GetCustomerInfoListRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns117:GetCustomerInfoListRequest"/>
+    </message>
+    <message name="GetCustomerInfoListResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns117:GetCustomerInfoListResponse"/>
+    </message>
+    <message name="GetFMCCustomerDetailsRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns118:GetFMCCustomerDetailsRequest"/>
+    </message>
+    <message name="GetFMCCustomerDetailsResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns118:GetFMCCustomerDetailsResponse"/>
+    </message>
+    <message name="GetMNPPortInOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns115:GetMNPPortInOrderRequest"/>
+    </message>
+    <message name="GetMNPPortInOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns115:GetMNPPortInOrderResponse"/>
+    </message>
+    <message name="GetMNPCancellationEligibilityRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns120:GetMNPCancellationEligibilityRequest"/>
+    </message>
+    <message name="GetMNPCancellationEligibilityResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns120:GetMNPCancellationEligibilityResponse"/>
+    </message>
+    <message name="GetCancellationEligibilityRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns119:GetCancellationEligibilityRequest"/>
+    </message>
+    <message name="GetCancellationEligibilityResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns119:GetCancellationEligibilityResponse"/>
+    </message>
+    <message name="MembersOrderTriggerRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns121:MembersOrderTriggerRequest"/>
+    </message>
+    <message name="MembersOrderTriggerResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns121:MembersOrderTriggerResponse"/>
+    </message>
+    <message name="GetGroupMemberListRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns122:GetGroupMemberListRequest"/>
+    </message>
+    <message name="GetGroupMemberListResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns122:GetGroupMemberListResponse"/>
+    </message>
+    <message name="GetCosbyGroupSnapshotRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns123:GetCosbyGroupSnapshotRequest"/>
+    </message>
+    <message name="GetCosbyGroupSnapshotResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns123:GetCosbyGroupSnapshotResponse"/>
+    </message>
+    <message name="ValidateCosbyMembershipRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns124:ValidateCosbyMembershipRequest"/>
+    </message>
+    <message name="ValidateCosbyMembershipResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns124:ValidateCosbyMembershipResponse"/>
+    </message>
+    <message name="GetMemberLimitsAndUsagesRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns125:GetMemberLimitsAndUsagesRequest"/>
+    </message>
+    <message name="GetMemberLimitsAndUsagesResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns125:GetMemberLimitsAndUsagesResponse"/>
+    </message>
+    <message name="GetSVBQuotaRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns126:GetSVBQuotaRequest"/>
+    </message>
+    <message name="GetSVBQuotaResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns126:GetSVBQuotaResponse"/>
+    </message>
+    <message name="GetCosbyGroupConfigurationRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns127:GetCosbyGroupConfigurationRequest"/>
+    </message>
+    <message name="GetCosbyGroupConfigurationResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns127:GetCosbyGroupConfigurationResponse"/>
+    </message>
+    <message name="UpdateKKBDataRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns128:UpdateKKBDataRequest"/>
+    </message>
+    <message name="UpdateKKBDataResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns128:UpdateKKBDataResponse"/>
+    </message>
+    <message name="UpdateSVBAttributeRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns129:UpdateSVBAttributeRequest"/>
+    </message>
+    <message name="UpdateSVBAttributeResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="UpdateSVBAttributeOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns130:UpdateSVBAttributeOrderRequest"/>
+    </message>
+    <message name="UpdateSVBAttributeOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns130:UpdateSVBAttributeOrderResponse"/>
+    </message>
+    <message name="GetAddOnsAgreementsAndOpenSRsRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns131:GetAddOnsAgreementsAndOpenSRsRequest"/>
+    </message>
+    <message name="GetAddOnsAgreementsAndOpenSRsResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns131:GetAddOnsAgreementsAndOpenSRsResponse"/>
+    </message>
+    <message name="ChangeMSISDNRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns132:ChangeMSISDNRequest"/>
+    </message>
+    <message name="ChangeMSISDNResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="SuspendAndResumeOrderRequest_v2">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns133:SuspendAndResumeOrderRequest"/>
+    </message>
+    <message name="SuspendAndResumeOrderResponse_v2">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns133:SuspendAndResumeOrderResponse"/>
+    </message>
+    <message name="SubmitOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns134:SubmitOrderRequest"/>
+    </message>
+    <message name="SubmitOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns134:SubmitOrderResponse"/>
+    </message>
+    <message name="GetSubscriberStatusRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns135:GetSubscriberStatusRequest"/>
+    </message>
+    <message name="GetSubscriberStatusResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns135:GetSubscriberStatusResponse"/>
+    </message>
+    <message name="GetAssetListRequest_v2">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns29:GetAssetListRequest"/>
+    </message>
+    <message name="GetAssetListResponse_v2">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns29:GetAssetListResponse"/>
+    </message>
+    <message name="GetAssetListRequest_v3">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns63:GetAssetListRequest"/>
+    </message>
+    <message name="GetAssetListResponse_v3">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns63:GetAssetListResponse"/>
+    </message>
+    <message name="GetBillingAccountListRequest_v2">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns136:GetBillingAccountListRequest"/>
+    </message>
+    <message name="GetBillingAccountListResponse_v2">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns136:GetBillingAccountListResponse"/>
+    </message>
+    <message name="GetCustomerRequest_v2">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns137:GetCustomerRequest"/>
+    </message>
+    <message name="GetCustomerResponse_v2">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns137:GetCustomerResponse"/>
+    </message>
+    <message name="CreateModifyOrderRequest_v2">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns138:CreateModifyOrderRequest"/>
+    </message>
+    <message name="CreateModifyOrderResponse_v2">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns138:CreateModifyOrderResponse"/>
+    </message>
+    <message name="CancelFDOByKeywordRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns139:CancelFDOByKeywordRequest"/>
+    </message>
+    <message name="CancelFDOByKeywordResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns139:CancelFDOByKeywordResponse"/>
+    </message>
+    <message name="CreateBulkOrdersRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns140:CreateBulkOrdersRequest"/>
+    </message>
+    <message name="CreateBulkOrdersResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns140:CreateBulkOrdersResponse"/>
+    </message>
+    <message name="CreateBulkRequestRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns141:CreateBulkRequestRequest"/>
+    </message>
+    <message name="CreateBulkRequestResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns141:CreateBulkRequestResponse"/>
+    </message>
+    <message name="GetBulkOrderStatusRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns142:GetBulkOrderStatusRequest"/>
+    </message>
+    <message name="GetBulkOrderStatusResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns142:GetBulkOrderStatusResponse"/>
+    </message>
+    <message name="GetBulkStatusRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns143:GetBulkStatusRequest"/>
+    </message>
+    <message name="GetBulkStatusResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns143:GetBulkStatusResponse"/>
+    </message>
+    <message name="ChannelOrderControlInsertRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns144:ChannelOrderControlInsertRequest"/>
+    </message>
+    <message name="ChannelOrderControlInsertResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns144:ChannelOrderControlInsertResponse"/>
+    </message>
+    <message name="ChannelOrderControlDeleteRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns145:ChannelOrderControlDeleteRequest"/>
+    </message>
+    <message name="ChannelOrderControlDeleteResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns145:ChannelOrderControlDeleteResponse"/>
+    </message>
+    <message name="SetOwnerContactForSubscriberRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns146:SetOwnerContactForSubscriberRequest"/>
+    </message>
+    <message name="SetOwnerContactForSubscriberResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns146:SetOwnerContactForSubscriberResponse"/>
+    </message>
+    <message name="GetBulkCorrelationIdByRefNoRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns157:GetBulkCorrelationIdByRefNoRequest"/>
+    </message>
+    <message name="GetBulkCorrelationIdByRefNoResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns157:GetBulkCorrelationIdByRefNoResponse"/>
+    </message>
+    <message name="CreateHandsetOrderCSMResponse_v1">
+        <part name="Header" type="ns149:FaultType"/>
+    </message>
+    <message name="CreateHandsetOrderCSMRequest_v1">
+        <part name="Cache" type="ns147:CacheType"/>
+        <part name="CacheOptions" type="ns147:CacheOptions"/>
+        <part name="Correlation" type="ns147:CorrelationType"/>
+        <part name="CountryCode" type="ns147:CountryCodeType"/>
+        <part name="Destination" type="ns147:DestinationType"/>
+        <part name="Identity" type="ns147:IdentityType"/>
+        <part name="LanguageCode" type="ns147:LanguageCodeType"/>
+        <part name="QueryResult" type="ns147:QueryResultType"/>
+        <part name="RouteInfo" type="ns147:RouteInfoType"/>
+        <part name="Route" type="ns147:RouteType"/>
+        <part name="ServiceDocumentation" type="ns147:ServiceDocumentationType"/>
+        <part name="Source" type="ns147:SourceType"/>
+        <part name="Body" type="ns148:SalesOrderVBOType"/>
+    </message>
+    <message name="CreateHandsetOrderRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns150:CreateHandsetOrderRequest"/>
+    </message>
+    <message name="CreateHandsetOrderResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+    </message>
+    <message name="UpdatePBMAndCommPermRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns156:UpdatePBMAndCommPermRequest"/>
+    </message>
+    <message name="UpdatePBMAndCommPermResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns156:UpdatePBMAndCommPermResponse"/>
+    </message>
+    <message name="UpdateUserCSMRequest_v1">
+        <part name="Cache" type="ns147:CacheType"/>
+        <part name="CacheOptions" type="ns147:CacheOptions"/>
+        <part name="Correlation" type="ns147:CorrelationType"/>
+        <part name="CountryCode" type="ns147:CountryCodeType"/>
+        <part name="Destination" type="ns147:DestinationType"/>
+        <part name="Identity" type="ns147:IdentityType"/>
+        <part name="LanguageCode" type="ns147:LanguageCodeType"/>
+        <part name="QueryResult" type="ns147:QueryResultType"/>
+        <part name="RouteInfo" type="ns147:RouteInfoType"/>
+        <part name="Route" type="ns147:RouteType"/>
+        <part name="ServiceDocumentation" type="ns147:ServiceDocumentationType"/>
+        <part name="Source" type="ns147:SourceType"/>
+        <part name="Body" type="ns151:WorkforceSystemUserAccountVBOType"/>
+    </message>
+    <message name="DeleteUserCSMResponse_v1">
+        <part name="Header" type="ns149:FaultType"/>
+    </message>
+    <message name="CreateUserCSMRequest_v1">
+        <part name="Cache" type="ns147:CacheType"/>
+        <part name="CacheOptions" type="ns147:CacheOptions"/>
+        <part name="Correlation" type="ns147:CorrelationType"/>
+        <part name="CountryCode" type="ns147:CountryCodeType"/>
+        <part name="Destination" type="ns147:DestinationType"/>
+        <part name="Identity" type="ns147:IdentityType"/>
+        <part name="LanguageCode" type="ns147:LanguageCodeType"/>
+        <part name="QueryResult" type="ns147:QueryResultType"/>
+        <part name="RouteInfo" type="ns147:RouteInfoType"/>
+        <part name="Route" type="ns147:RouteType"/>
+        <part name="ServiceDocumentation" type="ns147:ServiceDocumentationType"/>
+        <part name="Source" type="ns147:SourceType"/>
+        <part name="Body" type="ns151:WorkforceSystemUserAccountVBOType"/>
+    </message>
+    <message name="DeleteUserCSMRequest_v1">
+        <part name="Cache" type="ns147:CacheType"/>
+        <part name="CacheOptions" type="ns147:CacheOptions"/>
+        <part name="Correlation" type="ns147:CorrelationType"/>
+        <part name="CountryCode" type="ns147:CountryCodeType"/>
+        <part name="Destination" type="ns147:DestinationType"/>
+        <part name="Identity" type="ns147:IdentityType"/>
+        <part name="LanguageCode" type="ns147:LanguageCodeType"/>
+        <part name="QueryResult" type="ns147:QueryResultType"/>
+        <part name="RouteInfo" type="ns147:RouteInfoType"/>
+        <part name="Route" type="ns147:RouteType"/>
+        <part name="ServiceDocumentation" type="ns147:ServiceDocumentationType"/>
+        <part name="Source" type="ns147:SourceType"/>
+        <part name="Body" type="ns151:WorkforceSystemUserAccountVBOType"/>
+    </message>
+    <message name="CreateUserCSMResponse_v1">
+        <part name="Header" type="ns149:FaultType"/>
+    </message>
+    <message name="UpdateUserCSMResponse_v1">
+        <part name="Header" type="ns149:FaultType"/>
+    </message>
+    <message name="CreateUserRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns154:CreateUserRequest"/>
+    </message>
+    <message name="UpdateUserRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns153:UpdateUserRequest"/>
+    </message>
+    <message name="DeleteUserRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns152:DeleteUserRequest"/>
+    </message>
+    <message name="UpdatePBMAndCommPermRequest_v2">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns155:UpdatePBMAndCommPermRequest"/>
+    </message>
+    <message name="UpdatePBMAndCommPermResponse_v2">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns155:UpdatePBMAndCommPermResponse"/>
+    </message>
+    <message name="GetOrderTransDataRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns158:GetOrderTransDataRequest"/>
+    </message>
+    <message name="GetOrderTransDataResponse_v1">
+        <part name="Header" type="ns3:ResponseHeader"/>
+        <part name="Body" type="ns158:GetOrderTransDataResponse"/>
+    </message>
+    <message name="SendCompletedDocumentationCSMRequest_v1">
+        <part name="Header" type="ns159:Header"/>
+        <part name="Body" type="ns159:DocumentVBORequest"/>
+    </message>
+    <message name="SendCompletedDocumentationCSMResponse_v1">
+        <part name="Header" type="ns149:FaultType"/>
+    </message>
+    <message name="SendCompletedDocumentationRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns159:DocumentVBORequest"/>
+    </message>
+    <message name="GetFormDetailsCSMRequest_v1">
+        <part name="Header" type="ns160:Header"/>
+        <part name="Body" type="ns160:GenerateDocumentVBORequest"/>
+    </message>
+    <message name="GetFormDetailsCSMResponse_v1">
+        <part name="Header" type="ns149:FaultType"/>
+        <part name="Body" type="ns160:GenerateDocumentVBOResponse"/>
+    </message>
+    <message name="GetFormDetailsRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns160:GenerateDocumentVBORequest"/>
+    </message>
+    <message name="GetServiceRequestDetailsCSMRequest_v1">
+        <part name="Header" type="ns149:FaultType"/>
+        <part name="Body" type="ns162:GetServiceRequestDetailsRequest"/>
+    </message>
+    <message name="GetServiceRequestDetailsCSMResponse_v1">
+        <part name="Header" type="ns149:FaultType"/>
+        <part name="Body" type="ns162:GetServiceRequestDetailsResponse"/>
+    </message>
+    <message name="CustomerPartyRequestCSM_v1">
+        <part name="Header" type="ns161:Header"/>
+        <part name="Body" type="ns161:CustomerPartyVBMRequest"/>
+    </message>
+    <message name="CustomerPartyResponseCSM_v1">
+        <part name="Header" type="ns149:FaultType"/>
+        <part name="Body" type="ns161:CustomerPartyVBMResponse"/>
+    </message>
+    <message name="CustomerPartyRequest_v1">
+        <part name="Header" type="ns:Header"/>
+        <part name="Body" type="ns161:CustomerPartyVBMRequest"/>
+    </message>
+    <portType name="SiebelServicesPortType">
+        <operation name="GetAssetList_v1">
+            <input message="tns:GetAssetListRequest_v1"/>
+            <output message="tns:GetAssetListResponse_v1"/>
+        </operation>
+        <operation name="CreateAlert_v1">
+            <input message="tns:CreateAlertRequest_v1"/>
+            <output message="tns:CreateAlertResponse_v1"/>
+        </operation>
+        <operation name="GetCustomer_v1">
+            <input message="tns:GetCustomerRequest_v1"/>
+            <output message="tns:GetCustomerResponse_v1"/>
+        </operation>
+        <operation name="GetContactDetails_v1">
+            <input message="tns:GetContactDetailsRequest_v1"/>
+            <output message="tns:GetContactDetailsResponse_v1"/>
+        </operation>
+        <operation name="UpdateBillCycleChangeStatus_v1">
+            <input message="tns:UpdateBillCycleChangeStatusRequest_v1"/>
+            <output message="tns:UpdateBillCycleChangeStatusResponse_v1"/>
+        </operation>
+        <operation name="CreateModifyOrder_v1">
+            <input message="tns:CreateModifyOrderRequest_v1"/>
+            <output message="tns:CreateModifyOrderResponse_v1"/>
+        </operation>
+        <operation name="UpdateBillingAccount_v1">
+            <input message="tns:UpdateBillingAccountRequest_v1"/>
+            <output message="tns:UpdateBillingAccountResponse_v1"/>
+        </operation>
+        <operation name="GetSelfcareCustomerIdentification_v1">
+            <input message="tns:GetSelfcareCustomerIdentificationRequest_v1"/>
+            <output message="tns:GetSelfcareCustomerIdentificationResponse_v1"/>
+        </operation>
+        <operation name="GetCustomerIdentification_v1">
+            <input message="tns:GetCustomerIdentificationRequest_v1"/>
+            <output message="tns:GetCustomerIdentificationResponse_v1"/>
+        </operation>
+        <operation name="GetOperationCost_v1">
+            <input message="tns:GetOperationCostRequest_v1"/>
+            <output message="tns:GetOperationCostResponse_v1"/>
+        </operation>
+        <operation name="UpdateSubscriberSelfcareAdmin_v1">
+            <input message="tns:UpdateSubscriberSelfcareAdminRequest_v1"/>
+            <output message="tns:UpdateSubscriberSelfcareAdminResponse_v1"/>
+        </operation>
+        <operation name="SuspendAndResumeOrder_v1">
+            <input message="tns:SuspendAndResumeOrderRequest_v1"/>
+            <output message="tns:SuspendAndResumeOrderResponse_v1"/>
+        </operation>
+        <operation name="UpdateOrderStatus_v1">
+            <input message="tns:UpdateOrderStatusRequest_v1"/>
+            <output message="tns:UpdateOrderStatusResponse_v1"/>
+        </operation>
+        <operation name="CancelOrder_v1">
+            <input message="tns:CancelOrderRequest_v1"/>
+            <output message="tns:CancelOrderResponse_v1"/>
+        </operation>
+        <operation name="UpdateItemsDates_v1">
+            <input message="tns:UpdateItemsDatesRequest_v1"/>
+            <output message="tns:UpdateItemsDatesResponse_v1"/>
+        </operation>
+        <operation name="UpdateOrderAttribute_v1">
+            <input message="tns:UpdateOrderAttributeRequest_v1"/>
+            <output message="tns:UpdateOrderAttributeResponse_v1"/>
+        </operation>
+        <operation name="SetDirectDebitOrdersStatus_v1">
+            <input message="tns:SetDirectDebitOrdersStatusRequest_v1"/>
+            <output message="tns:SetDirectDebitOrdersStatusResponse_v1"/>
+        </operation>
+        <operation name="GetMSISDNList_v1">
+            <input message="tns:GetMSISDNListRequest_v1"/>
+            <output message="tns:GetMSISDNListResponse_v1"/>
+        </operation>
+        <operation name="GetDirectoryCustomerName_v1">
+            <input message="tns:GetDirectoryCustomerNameRequest_v1"/>
+            <output message="tns:GetDirectoryCustomerNameResponse_v1"/>
+        </operation>
+        <operation name="GetDirectoryMSISDNList_v1">
+            <input message="tns:GetDirectoryMSISDNListRequest_v1"/>
+            <output message="tns:GetDirectoryMSISDNListResponse_v1"/>
+        </operation>
+        <operation name="GetBillingAccountsAndServicesLists_v1">
+            <input message="tns:GetBillingAccountsAndServicesListsRequest_v1"/>
+            <output message="tns:GetBillingAccountsAndServicesListsResponse_v1"/>
+        </operation>
+        <operation name="InvokeGenericQuery_v1">
+            <input message="tns:InvokeGenericQueryRequest_v1"/>
+            <output message="tns:InvokeGenericQueryResponse_v1"/>
+        </operation>
+        <operation name="InvokeGenericWorkflow_v1">
+            <input message="tns:InvokeGenericWorkflowRequest_v1"/>
+            <output message="tns:InvokeGenericWorkflowResponse_v1"/>
+        </operation>
+        <operation name="UpdateBillingAddress_v1">
+            <input message="tns:UpdateBillingAddressRequest_v1"/>
+            <output message="tns:UpdateBillingAddressResponse_v1"/>
+        </operation>
+        <operation name="UpdateContactAddress_v1">
+            <input message="tns:UpdateContactAddressRequest_v1"/>
+            <output message="tns:UpdateContactAddressResponse_v1"/>
+        </operation>
+        <operation name="GetCBUSubscribers_v1">
+            <input message="tns:GetCBUSubscribersRequest_v1"/>
+            <output message="tns:GetCBUSubscribersResponse_v1"/>
+        </operation>
+        <operation name="ActivateCreditCard_v1">
+            <input message="tns:ActivateCreditCardRequest_v1"/>
+            <output message="tns:ActivateCreditCardResponse_v1"/>
+        </operation>
+        <operation name="ManageServiceRequest_v1">
+            <input message="tns:ManageServiceRequestRequest_v1"/>
+            <output message="tns:ManageServiceRequestResponse_v1"/>
+        </operation>
+        <operation name="ValidatePTPEligibility_v1">
+            <input message="tns:ValidatePTPEligibilityRequest_v1"/>
+            <output message="tns:ValidatePTPEligibilityResponse_v1"/>
+        </operation>
+        <operation name="CreateOrder_v1">
+            <input message="tns:CreateOrderRequest_v1"/>
+            <output message="tns:CreateOrderResponse_v1"/>
+        </operation>
+        <operation name="GetOpenOrders_v1">
+            <input message="tns:GetOpenOrdersRequest_v1"/>
+            <output message="tns:GetOpenOrdersResponse_v1"/>
+        </operation>
+        <operation name="CreateDunningOrder_v1">
+            <input message="tns:CreateDunningOrderRequest_v1"/>
+            <output message="tns:CreateDunningOrderResponse_v1"/>
+        </operation>
+        <operation name="NotifyFutureDatedOrder_v1">
+            <input message="tns:NotifyFutureDatedOrderRequest_v1"/>
+            <output message="tns:NotifyFutureDatedOrderResponse_v1"/>
+        </operation>
+        <operation name="GetBillingAccountList_v1">
+            <input message="tns:GetBillingAccountListRequest_v1"/>
+            <output message="tns:GetBillingAccountListResponse_v1"/>
+        </operation>
+        <operation name="InsertPromiseToPay_v1">
+            <input message="tns:InsertPromiseToPayRequest_v1"/>
+            <output message="tns:InsertPromiseToPayResponse_v1"/>
+        </operation>
+        <operation name="CreateCreditAlert_v1">
+            <input message="tns:CreateCreditAlertRequest_v1"/>
+            <output message="tns:CreateCreditAlertResponse_v1"/>
+        </operation>
+        <operation name="ManageDealerInformation_v1">
+            <input message="tns:ManageDealerInformationRequest_v1"/>
+            <output message="tns:ManageDealerInformationResponse_v1"/>
+        </operation>
+        <operation name="ManageUserInformation_v1">
+            <input message="tns:ManageUserInformationRequest_v1"/>
+            <output message="tns:ManageUserInformationResponse_v1"/>
+        </operation>
+        <operation name="ManageRegionalInformation_v1">
+            <input message="tns:ManageRegionalInformationRequest_v1"/>
+            <output message="tns:ManageRegionalInformationResponse_v1"/>
+        </operation>
+        <operation name="ManageRegionalUser_v1">
+            <input message="tns:ManageRegionalUserRequest_v1"/>
+            <output message="tns:ManageRegionalUserResponse_v1"/>
+        </operation>
+        <operation name="CreateCEMEvent_v1">
+            <input message="tns:CreateCEMEventRequest_v1"/>
+            <output message="tns:CreateCEMEventResponse_v1"/>
+        </operation>
+        <operation name="GetShopDetails_v1">
+            <input message="tns:GetShopDetailsRequest_v1"/>
+            <output message="tns:GetShopDetailsResponse_v1"/>
+        </operation>
+        <operation name="GetProductName_v1">
+            <input message="tns:GetProductNameRequest_v1"/>
+            <output message="tns:GetProductNameResponse_v1"/>
+        </operation>
+        <operation name="GetCreditCard_v1">
+            <input message="tns:GetCreditCardRequest_v1"/>
+            <output message="tns:GetCreditCardResponse_v1"/>
+        </operation>
+        <operation name="GetPersonalData_v1">
+            <input message="tns:GetPersonalDataRequest_v1"/>
+            <output message="tns:GetPersonalDataResponse_v1"/>
+        </operation>
+        <operation name="GetCustomerInformation_v1">
+            <input message="tns:GetCustomerInformationRequest_v1"/>
+            <output message="tns:GetCustomerInformationResponse_v1"/>
+        </operation>
+        <operation name="ManageBadDebtCampaignFlag_v1">
+            <input message="tns:ManageBadDebtCampaignFlagRequest_v1"/>
+            <output message="tns:ManageBadDebtCampaignFlagResponse_v1"/>
+        </operation>
+        <operation name="ValidateFraud_v1">
+            <input message="tns:ValidateFraudRequest_v1"/>
+            <output message="tns:ValidateFraudResponse_v1"/>
+        </operation>
+        <operation name="ValidateTCKN_v1">
+            <input message="tns:ValidateTCKNRequest_v1"/>
+            <output message="tns:ValidateTCKNResponse_v1"/>
+        </operation>
+        <operation name="MobileSignatureNotification_v1">
+            <input message="tns:MobileSignatureNotificationRequest_v1"/>
+            <output message="tns:MobileSignatureNotificationResponse_v1"/>
+        </operation>
+        <operation name="GetActiveAgreements_v1">
+            <input message="tns:GetActiveAgreementsRequest_v1"/>
+            <output message="tns:GetActiveAgreementsResponse_v1"/>
+        </operation>
+        <operation name="GetSmartScriptQuestions_v1">
+            <input message="tns:GetSmartScriptQuestionsRequest_v1"/>
+            <output message="tns:GetSmartScriptQuestionsResponse_v1"/>
+        </operation>
+        <operation name="GetSubscribersByTCKN_v1">
+            <input message="tns:GetSubscribersByTCKNRequest_v1"/>
+            <output message="tns:GetSubscribersByTCKNResponse_v1"/>
+        </operation>
+        <operation name="SetLoyalty_v1">
+            <input message="tns:SetLoyaltyRequest_v1"/>
+            <output message="tns:SetLoyaltyResponse_v1"/>
+        </operation>
+        <operation name="GetCustomerDetails_v1">
+            <input message="tns:GetCustomerDetailsRequest_v1"/>
+            <output message="tns:GetCustomerDetailsResponse_v1"/>
+        </operation>
+        <operation name="UpdateLoyalty_v1">
+            <input message="tns:UpdateLoyaltyRequest_v1"/>
+            <output message="tns:UpdateLoyaltyResponse_v1"/>
+        </operation>
+        <operation name="GetMSISDNStatus_v1">
+            <input message="tns:GetMSISDNStatusRequest_v1"/>
+            <output message="tns:GetMSISDNStatusResponse_v1"/>
+        </operation>
+        <operation name="CreateMNPRequest_v1">
+            <input message="tns:CreateMNPRequestRequest_v1"/>
+            <output message="tns:CreateMNPRequestResponse_v1"/>
+        </operation>
+        <operation name="UpdateCoupledNumber_v1">
+            <input message="tns:UpdateCoupledNumberRequest_v1"/>
+            <output message="tns:UpdateCoupledNumberResponse_v1"/>
+        </operation>
+        <operation name="GetMSISDNListByMSISDN_v1">
+            <input message="tns:GetMSISDNListByMSISDNRequest_v1"/>
+            <output message="tns:GetMSISDNListByMSISDNResponse_v1"/>
+        </operation>
+        <operation name="UpdateTAPortinOrder_v1">
+            <input message="tns:UpdateTAPortinOrderRequest_v1"/>
+            <output message="tns:UpdateTAPortinOrderResponse_v1"/>
+        </operation>
+        <operation name="GetMSISDNChangeHistory_v1">
+            <input message="tns:GetMSISDNChangeHistoryRequest_v1"/>
+            <output message="tns:GetMSISDNChangeHistoryResponse_v1"/>
+        </operation>
+        <operation name="GetAssetDetailList_v1">
+            <input message="tns:GetAssetDetailListRequest_v1"/>
+            <output message="tns:GetAssetDetailListResponse_v1"/>
+        </operation>
+        <operation name="UpdateBarringStatus_v1">
+            <input message="tns:UpdateBarringStatusRequest_v1"/>
+            <output message="tns:UpdateBarringStatusResponse_v1"/>
+        </operation>
+        <operation name="ManageDumanProcesses_v1">
+            <input message="tns:ManageDumanProcessesRequest_v1"/>
+            <output message="tns:ManageDumanProcessesResponse_v1"/>
+        </operation>
+        <operation name="ValidateMernisStatus_v1">
+            <input message="tns:ValidateMernisStatusRequest_v1"/>
+            <output message="tns:ValidateMernisStatusResponse_v1"/>
+        </operation>
+        <operation name="ValidateGibStatus_v1">
+            <input message="tns:ValidateGibStatusRequest_v1"/>
+            <output message="tns:ValidateGibStatusResponse_v1"/>
+        </operation>
+        <operation name="GetBundleConsumable_v1">
+            <input message="tns:GetBundleConsumableRequest_v1"/>
+            <output message="tns:GetBundleConsumableResponse_v1"/>
+        </operation>
+        <operation name="GetAuthorizeAddon_v1">
+            <input message="tns:GetAuthorizeAddonRequest_v1"/>
+            <output message="tns:GetAuthorizeAddonResponse_v1"/>
+        </operation>
+        <operation name="GetBundleMSISDNList_v1">
+            <input message="tns:GetBundleMSISDNListRequest_v1"/>
+            <output message="tns:GetBundleMSISDNListResponse_v1"/>
+        </operation>
+        <operation name="CreateMissingDocEvent_v1">
+            <input message="tns:CreateMissingDocEventRequest_v1"/>
+            <output message="tns:CreateMissingDocEventResponse_v1"/>
+        </operation>
+        <operation name="CreatePortOutRequest_v1">
+            <input message="tns:CreatePortOutRequestRequest_v1"/>
+            <output message="tns:CreatePortOutRequestResponse_v1"/>
+        </operation>
+        <operation name="PortOutCancellationRequest_v1">
+            <input message="tns:PortOutCancellationRequestRequest_v1"/>
+            <output message="tns:PortOutCancellationRequestResponse_v1"/>
+        </operation>
+        <operation name="GetServiceRequestDetails_v1">
+            <input message="tns:GetServiceRequestDetailsRequest_v1"/>
+            <output message="tns:GetServiceRequestDetailsResponse_v1"/>
+        </operation>
+        <operation name="GetDataSharingMainLine_v1">
+            <input message="tns:GetDataSharingMainLineRequest_v1"/>
+            <output message="tns:GetDataSharingMainLineResponse_v1"/>
+        </operation>
+        <operation name="GetTCIDDetails_v1">
+            <input message="tns:GetTCIDDetailsRequest_v1"/>
+            <output message="tns:GetTCIDDetailsResponse_v1"/>
+        </operation>
+        <operation name="GetPaymentData_v1">
+            <input message="tns:GetPaymentDataRequest_v1"/>
+            <output message="tns:GetPaymentDataResponse_v1"/>
+        </operation>
+        <operation name="CreateNotifyOrder_v1">
+            <input message="tns:CreateNotifyOrderRequest_v1"/>
+            <output message="tns:CreateNotifyOrderResponse_v1"/>
+        </operation>
+        <operation name="GetAssetOrder_v1">
+            <input message="tns:GetAssetOrderRequest_v1"/>
+            <output message="tns:GetAssetOrderResponse_v1"/>
+        </operation>
+        <operation name="DeleteVodafoneGroup_v1">
+            <input message="tns:DeleteVodafoneGroupRequest_v1"/>
+            <output message="tns:DeleteVodafoneGroupResponse_v1"/>
+        </operation>
+        <operation name="CancelSecondCampaign_v1">
+            <input message="tns:CancelSecondCampaignRequest_v1"/>
+            <output message="tns:CancelSecondCampaignResponse_v1"/>
+        </operation>
+        <operation name="GetBundleRenewalDate_v1">
+            <input message="tns:GetBundleRenewalDateRequest_v1"/>
+            <output message="tns:GetBundleRenewalDateResponse_v1"/>
+        </operation>
+        <operation name="GetGroupHeadNumber_v1">
+            <input message="tns:GetGroupHeadNumberRequest_v1"/>
+            <output message="tns:GetGroupHeadNumberResponse_v1"/>
+        </operation>
+        <operation name="GetGroupMemberTotal_v1">
+            <input message="tns:GetGroupMemberTotalRequest_v1"/>
+            <output message="tns:GetGroupMemberTotalResponse_v1"/>
+        </operation>
+        <operation name="GetAvailableTariffsList_v1">
+            <input message="tns:GetAvailableTariffsListRequest_v1"/>
+            <output message="tns:GetAvailableTariffsListResponse_v1"/>
+        </operation>
+        <operation name="ManageSubDealerSR_v1">
+            <input message="tns:ManageSubDealerSRRequest_v1"/>
+            <output message="tns:ManageSubDealerSRResponse_v1"/>
+        </operation>
+        <operation name="GetCustomerInfoList_v1">
+            <input message="tns:GetCustomerInfoListRequest_v1"/>
+            <output message="tns:GetCustomerInfoListResponse_v1"/>
+        </operation>
+        <operation name="GetFMCCustomerDetails_v1">
+            <input message="tns:GetFMCCustomerDetailsRequest_v1"/>
+            <output message="tns:GetFMCCustomerDetailsResponse_v1"/>
+        </operation>
+        <operation name="GetMNPPortInOrder_v1">
+            <input message="tns:GetMNPPortInOrderRequest_v1"/>
+            <output message="tns:GetMNPPortInOrderResponse_v1"/>
+        </operation>
+        <operation name="GetMNPCancellationEligibility_v1">
+            <input message="tns:GetMNPCancellationEligibilityRequest_v1"/>
+            <output message="tns:GetMNPCancellationEligibilityResponse_v1"/>
+        </operation>
+        <operation name="GetCancellationEligibility_v1">
+            <input message="tns:GetCancellationEligibilityRequest_v1"/>
+            <output message="tns:GetCancellationEligibilityResponse_v1"/>
+        </operation>
+        <operation name="MembersOrderTrigger_v1">
+            <input message="tns:MembersOrderTriggerRequest_v1"/>
+            <output message="tns:MembersOrderTriggerResponse_v1"/>
+        </operation>
+        <operation name="GetGroupMemberList_v1">
+            <input message="tns:GetGroupMemberListRequest_v1"/>
+            <output message="tns:GetGroupMemberListResponse_v1"/>
+        </operation>
+        <operation name="GetCosbyGroupSnapshot_v1">
+            <input message="tns:GetCosbyGroupSnapshotRequest_v1"/>
+            <output message="tns:GetCosbyGroupSnapshotResponse_v1"/>
+        </operation>
+        <operation name="ValidateCosbyMembership_v1">
+            <input message="tns:ValidateCosbyMembershipRequest_v1"/>
+            <output message="tns:ValidateCosbyMembershipResponse_v1"/>
+        </operation>
+        <operation name="GetMemberLimitsAndUsages_v1">
+            <input message="tns:GetMemberLimitsAndUsagesRequest_v1"/>
+            <output message="tns:GetMemberLimitsAndUsagesResponse_v1"/>
+        </operation>
+        <operation name="GetSVBQuota_v1">
+            <input message="tns:GetSVBQuotaRequest_v1"/>
+            <output message="tns:GetSVBQuotaResponse_v1"/>
+        </operation>
+        <operation name="GetCosbyGroupConfiguration_v1">
+            <input message="tns:GetCosbyGroupConfigurationRequest_v1"/>
+            <output message="tns:GetCosbyGroupConfigurationResponse_v1"/>
+        </operation>
+        <operation name="UpdateKKBData_v1">
+            <input message="tns:UpdateKKBDataRequest_v1"/>
+            <output message="tns:UpdateKKBDataResponse_v1"/>
+        </operation>
+        <operation name="UpdateSVBAttribute_v1">
+            <input message="tns:UpdateSVBAttributeRequest_v1"/>
+            <output message="tns:UpdateSVBAttributeResponse_v1"/>
+        </operation>
+        <operation name="UpdateSVBAttributeOrder_v1">
+            <input message="tns:UpdateSVBAttributeOrderRequest_v1"/>
+            <output message="tns:UpdateSVBAttributeOrderResponse_v1"/>
+        </operation>
+        <operation name="GetAddOnsAgreementsAndOpenSRs_v1">
+            <input message="tns:GetAddOnsAgreementsAndOpenSRsRequest_v1"/>
+            <output message="tns:GetAddOnsAgreementsAndOpenSRsResponse_v1"/>
+        </operation>
+        <operation name="ChangeMSISDN_v1">
+            <input message="tns:ChangeMSISDNRequest_v1"/>
+            <output message="tns:ChangeMSISDNResponse_v1"/>
+        </operation>
+        <operation name="SuspendAndResumeOrder_v2">
+            <input message="tns:SuspendAndResumeOrderRequest_v2"/>
+            <output message="tns:SuspendAndResumeOrderResponse_v2"/>
+        </operation>
+        <operation name="SubmitOrder_v1">
+            <input message="tns:SubmitOrderRequest_v1"/>
+            <output message="tns:SubmitOrderResponse_v1"/>
+        </operation>
+        <operation name="GetSubscriberStatus_v1">
+            <input message="tns:GetSubscriberStatusRequest_v1"/>
+            <output message="tns:GetSubscriberStatusResponse_v1"/>
+        </operation>
+        <operation name="GetAssetList_v2">
+            <input message="tns:GetAssetListRequest_v2"/>
+            <output message="tns:GetAssetListResponse_v2"/>
+        </operation>
+        <operation name="GetAssetList_v3">
+            <input message="tns:GetAssetListRequest_v3"/>
+            <output message="tns:GetAssetListResponse_v3"/>
+        </operation>
+        <operation name="GetBillingAccountList_v2">
+            <input message="tns:GetBillingAccountListRequest_v2"/>
+            <output message="tns:GetBillingAccountListResponse_v2"/>
+        </operation>
+        <operation name="GetCustomer_v2">
+            <input message="tns:GetCustomerRequest_v2"/>
+            <output message="tns:GetCustomerResponse_v2"/>
+        </operation>
+        <operation name="CreateModifyOrder_v2">
+            <input message="tns:CreateModifyOrderRequest_v2"/>
+            <output message="tns:CreateModifyOrderResponse_v2"/>
+        </operation>
+        <operation name="CancelFDOByKeyword_v1">
+            <input message="tns:CancelFDOByKeywordRequest_v1"/>
+            <output message="tns:CancelFDOByKeywordResponse_v1"/>
+        </operation>
+        <operation name="ChannelOrderControlInsert_v1">
+            <input message="tns:ChannelOrderControlInsertRequest_v1"/>
+            <output message="tns:ChannelOrderControlInsertResponse_v1"/>
+        </operation>
+        <operation name="ChannelOrderControlDelete_v1">
+            <input message="tns:ChannelOrderControlDeleteRequest_v1"/>
+            <output message="tns:ChannelOrderControlDeleteResponse_v1"/>
+        </operation>
+        <operation name="SetOwnerContactForSubscriber_v1">
+            <input message="tns:SetOwnerContactForSubscriberRequest_v1"/>
+            <output message="tns:SetOwnerContactForSubscriberResponse_v1"/>
+        </operation>
+        <operation name="UpdatePBMAndCommPerm_v1">
+            <input message="tns:UpdatePBMAndCommPermRequest_v1"/>
+            <output message="tns:UpdatePBMAndCommPermResponse_v1"/>
+        </operation>
+        <operation name="UpdatePBMAndCommPerm_v2">
+            <input message="tns:UpdatePBMAndCommPermRequest_v2"/>
+            <output message="tns:UpdatePBMAndCommPermResponse_v2"/>
+        </operation>
+        <operation name="GetBulkCorrelationIdByRefNo_v1">
+            <input message="tns:GetBulkCorrelationIdByRefNoRequest_v1"/>
+            <output message="tns:GetBulkCorrelationIdByRefNoResponse_v1"/>
+        </operation>
+        <operation name="GetOrderTransData_v1">
+            <input message="tns:GetOrderTransDataRequest_v1"/>
+            <output message="tns:GetOrderTransDataResponse_v1"/>
+        </operation>
+        <operation name="GetServiceRequestDetailsCSM_v1">
+            <input message="tns:GetServiceRequestDetailsCSMRequest_v1"/>
+            <output message="tns:GetServiceRequestDetailsCSMResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="ManageServiceRequestPortType">
+        <operation name="ManageServiceRequest_v1">
+            <input message="tns:ManageServiceRequestRequest_v1"/>
+            <output message="tns:ManageServiceRequestResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="CreateCEMEventPortType">
+        <operation name="CreateCEMEvent_v1">
+            <input message="tns:CreateCEMEventRequest_v1"/>
+            <output message="tns:CreateCEMEventResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="ManageDealerInformationPortType">
+        <operation name="ManageDealerInformation_v1">
+            <input message="tns:ManageDealerInformationRequest_v1"/>
+            <output message="tns:ManageDealerInformationResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="ManageUserInformationPortType">
+        <operation name="ManageUserInformation_v1">
+            <input message="tns:ManageUserInformationRequest_v1"/>
+            <output message="tns:ManageUserInformationResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="ManageRegionalInformationPortType">
+        <operation name="ManageRegionalInformation_v1">
+            <input message="tns:ManageRegionalInformationRequest_v1"/>
+            <output message="tns:ManageRegionalInformationResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="ManageRegionalUserPortType">
+        <operation name="ManageRegionalUser_v1">
+            <input message="tns:ManageRegionalUserRequest_v1"/>
+            <output message="tns:ManageRegionalUserResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="GetShopDetailsPortType">
+        <operation name="GetShopDetails_v1">
+            <input message="tns:GetShopDetailsRequest_v1"/>
+            <output message="tns:GetShopDetailsResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="GetCBUSubscribersPortType">
+        <operation name="GetCBUSubscribers_v1">
+            <input message="tns:GetCBUSubscribersRequest_v1"/>
+            <output message="tns:GetCBUSubscribersResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="GetCustomerDetailsPortType">
+        <operation name="GetCustomerDetails_v1">
+            <input message="tns:GetCustomerDetailsRequest_v1"/>
+            <output message="tns:GetCustomerDetailsResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="CreateMissingDocEventPortType">
+        <operation name="CreateMissingDocEvent_v1">
+            <input message="tns:CreateMissingDocEventRequest_v1"/>
+            <output message="tns:CreateMissingDocEventResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="CreateNotifyOrderPortType">
+        <operation name="CreateNotifyOrder_v1">
+            <input message="tns:CreateNotifyOrderRequest_v1"/>
+            <output message="tns:CreateNotifyOrderResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="GetFMCCustomerDetailsPortType">
+        <operation name="GetFMCCustomerDetails_v1">
+            <input message="tns:GetFMCCustomerDetailsRequest_v1"/>
+            <output message="tns:GetFMCCustomerDetailsResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="GetMSISDNListPortType">
+        <operation name="GetMSISDNList_v1">
+            <input message="tns:GetMSISDNListRequest_v1"/>
+            <output message="tns:GetMSISDNListResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="CreateModifyOrderPortType">
+        <operation name="CreateModifyOrder_v1">
+            <input message="tns:CreateModifyOrderRequest_v1"/>
+            <output message="tns:CreateModifyOrderResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="ValidateTCKNPortType">
+        <operation name="ValidateTCKN_v1">
+            <input message="tns:ValidateTCKNRequest_v1"/>
+            <output message="tns:ValidateTCKNResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="BulkOrdersPortType">
+        <operation name="CreateBulkOrders_v1">
+            <input message="tns:CreateBulkOrdersRequest_v1"/>
+            <output message="tns:CreateBulkOrdersResponse_v1"/>
+        </operation>
+        <operation name="CreateBulkRequest_v1">
+            <input message="tns:CreateBulkRequestRequest_v1"/>
+            <output message="tns:CreateBulkRequestResponse_v1"/>
+        </operation>
+        <operation name="GetBulkOrderStatus_v1">
+            <input message="tns:GetBulkOrderStatusRequest_v1"/>
+            <output message="tns:GetBulkOrderStatusResponse_v1"/>
+        </operation>
+        <operation name="GetBulkStatus_v1">
+            <input message="tns:GetBulkStatusRequest_v1"/>
+            <output message="tns:GetBulkStatusResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="EShopPortType">
+        <operation name="CreateHandsetOrder_v1">
+            <input message="tns:CreateHandsetOrderRequest_v1"/>
+            <output message="tns:CreateHandsetOrderResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="AccessPointPortType">
+        <operation name="CreateUser_v1">
+            <input message="tns:CreateUserCSMRequest_v1"/>
+            <output message="tns:CreateUserCSMResponse_v1"/>
+        </operation>
+        <operation name="UpdateUser_v1">
+            <input message="tns:UpdateUserCSMRequest_v1"/>
+            <output message="tns:UpdateUserCSMResponse_v1"/>
+        </operation>
+        <operation name="DeleteUser_v1">
+            <input message="tns:DeleteUserCSMRequest_v1"/>
+            <output message="tns:DeleteUserCSMResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="BiometricSignaturePortType">
+        <operation name="SendCompletedDocumentationCSM_v1">
+            <input message="tns:SendCompletedDocumentationCSMRequest_v1"/>
+            <output message="tns:SendCompletedDocumentationCSMResponse_v1"/>
+        </operation>
+        <operation name="GetFormDetailsCSM_v1">
+            <input message="tns:GetFormDetailsCSMRequest_v1"/>
+            <output message="tns:GetFormDetailsCSMResponse_v1"/>
+        </operation>
+    </portType>
+    <portType name="CustomerPartyPortType">
+        <operation name="CustomerPartyCSM_v1">
+            <input message="tns:CustomerPartyRequestCSM_v1"/>
+            <output message="tns:CustomerPartyResponseCSM_v1"/>
+        </operation>
+    </portType>
+</definitions>

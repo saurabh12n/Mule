@@ -1,0 +1,5 @@
+authenticated.users=[{"token"\:"1f171948-d6ca-4a3f-aad2-af633b5eeb78","userId"\:"saurabh12n6","refreshToken"\:"","baseUrl"\:"https\://anypoint.mulesoft.com/"}]
+current.token=1f171948-d6ca-4a3f-aad2-af633b5eeb78
+current.user=saurabh12n6
+eclipse.preferences.version=1
+org.mule.tooling.amc.apps={"userProjectMap"\:{"saurabh12n6"\:{"apdev-american-ws"\:"{\\"applicationName\\"\:\\"apdev-american-ws-saurabh\\",\\"muleRuntime\\"\:\\"3.9.0\\",\\"properties\\"\:{\\"env\\"\:\\"DEV\\"}}"}}}

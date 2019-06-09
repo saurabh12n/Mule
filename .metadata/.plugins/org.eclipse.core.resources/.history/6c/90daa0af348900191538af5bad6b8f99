@@ -1,0 +1,8 @@
+package myapp.webservice;
+
+import javax.jws.WebService;
+
+@WebService
+public class HelloWorldService implements I  {
+
+}

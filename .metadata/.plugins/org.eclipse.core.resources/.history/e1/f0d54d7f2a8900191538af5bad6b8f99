@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://xmlns.example.com/1199773829187" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://www.tibco.com/xmlns/ae2xsd/2002/05/ae/Assign1/AESchema" xmlns:ns2="http://www.tibco.com/xmlns/ae2xsd/2002/05/ae/Assign1/Assign1Schema" xmlns:ns3="http://www.tibco.com/schemas/AssignTry/assign1/Schema.xsd" xmlns:ns4="http://www.example.com/xsd/books" targetNamespace="http://xmlns.example.com/1199773829187">
+    <import namespace="http://www.tibco.com/xmlns/ae2xsd/2002/05/ae/Assign1/AESchema"/>
+    <import namespace="http://www.tibco.com/xmlns/ae2xsd/2002/05/ae/Assign1/Assign1Schema" location="../../AESchemas/ae/Assign1/Assign1Schema.aeschema"/>
+    <import namespace="http://www.example.com/xsd/books" location="../SearchByAuthorSchema/NewBooks.xsd"/>
+    <message name="GetAuthorName">
+        <part name="part1" element="ns4:Author"/>
+    </message>
+    <message name="GetBookDetails">
+        <part name="part1" element="ns4:BookStore"/>
+    </message>
+    <portType name="PortType">
+        <operation name="Operation">
+            <input message="tns:GetAuthorName"/>
+            <output message="tns:GetBookDetails"/>
+        </operation>
+    </portType>
+</definitions>
