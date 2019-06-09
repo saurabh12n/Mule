@@ -3632,3 +3632,21 @@ Binding(CTRL+F,
 
 !ENTRY org.mule.tooling.core 2 0 2019-06-09 16:51:51.521
 !MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2019-06-09 19:45:52.261
+!MESSAGE There was an error running the studio:studio goal on project testmaven
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2019-06-09 19:45:52.261
+!MESSAGE There was an error running the studio:studio goal on project testmaven
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2019-06-09 19:45:52.276
+!MESSAGE There was an error running the studio:studio goal on project testmaven
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2019-06-09 19:47:28.581
+!MESSAGE There was an error running the studio:studio goal on project testmaven
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2019-06-09 19:47:28.589
+!MESSAGE There was an error running the studio:studio goal on project testmaven
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2019-06-09 19:47:28.589
+!MESSAGE There was an error running the studio:studio goal on project testmaven

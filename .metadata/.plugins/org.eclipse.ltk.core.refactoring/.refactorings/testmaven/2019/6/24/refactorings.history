@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;testmaven/src/main/resources/app-dev-properties&apos; to &apos;app-dev.properties&apos;" description="Rename resource &apos;app-dev-properties&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/app-dev-properties" name="app-dev.properties" stamp="1560089854401" updateReferences="true"/>
+</session>

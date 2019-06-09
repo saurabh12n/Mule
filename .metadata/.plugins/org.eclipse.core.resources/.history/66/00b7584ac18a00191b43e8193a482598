@@ -80,7 +80,8 @@
 
 <files>
 
-<file>src/main/resources/app-dev.properties</file>
+<file>src/main/resources/init.properties</file>
+
 </files>
 
 </configuration>

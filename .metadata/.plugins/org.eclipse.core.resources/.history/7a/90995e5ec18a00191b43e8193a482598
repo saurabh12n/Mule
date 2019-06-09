@@ -81,6 +81,7 @@
 <files>
 
 <file>src/main/resources/app-dev.properties</file>
+
 </files>
 
 </configuration>
