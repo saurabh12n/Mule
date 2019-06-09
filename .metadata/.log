@@ -3620,3 +3620,15 @@ Binding(CTRL+F,
 
 !ENTRY org.mule.tooling.core 2 0 2019-06-09 15:22:41.658
 !MESSAGE Trying to add an extension that was already in the project: MuleExtension [name=Amazon S3, qualifier=org.mule.tooling.ui.contribution.s3.3.5.0]
+
+!ENTRY org.mule.tooling.core 1 0 2019-06-09 16:51:51.020
+!MESSAGE While generating classpath found that C:\AnypointStudio\plugins\org.mule.tooling.server.3.9.0.ee_6.4.3.201801182026\mule\lib\endorsed\ is not a directory.
+
+!ENTRY org.mule.tooling.core 1 0 2019-06-09 16:51:51.020
+!MESSAGE While generating classpath found that C:\AnypointStudio\plugins\org.mule.tooling.server.3.9.0.ee_6.4.3.201801182026\mule\lib\endorsed\ is not a directory.
+
+!ENTRY org.mule.tooling.core 2 0 2019-06-09 16:51:51.521
+!MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.core 2 0 2019-06-09 16:51:51.521
+!MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
